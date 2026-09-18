@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suligon — Custom websites and AI agents for local businesses</title>
+<meta name="description" content="Suligon designs and builds custom websites and AI agents for local businesses in the US and Spain. No templates — a real design direction, a real preview, ongoing support.">
+<link rel="icon" type="image/png" href="assets/logo16.png">
+<link rel="apple-touch-icon" href="assets/logo16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Bebas+Neue&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Suligon",
+  "description": "Suligon designs and builds custom websites and AI agents for local businesses in the United States and Spain.",
+  "email": "suligonserv@gmail.com",
+  "areaServed": ["US", "ES"],
+  "knowsLanguage": ["en", "es"],
+  "logo": "assets/logo16.png"
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="header-bar">
+    <a href="#contact" class="brand-standalone" aria-label="Suligon — go to contact">
+      <img src="assets/logo16.png" alt="Suligon" class="brand-logo-lg" data-logo-cutout>
+    </a>
+
+    <div class="nav-shell">
+      <div class="nav-core">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#work" data-i18n="nav.work">What we do</a>
+          <a href="#process" data-i18n="nav.process">How we work</a>
+          <a href="#styles" data-i18n="nav.styles">Styles</a>
+          <a href="#help" data-i18n="nav.help">Who we help</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-btn is-active" data-lang="en">EN</button>
+            <span class="lang-sep" aria-hidden="true">/</span>
+            <button type="button" class="lang-btn" data-lang="es">ES</button>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <span data-i18n="nav.cta">Start a project</span>
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="12" height="12"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu-links" aria-label="Mobile">
+      <a href="#work" data-i18n="nav.work" style="--i:0">What we do</a>
+      <a href="#process" data-i18n="nav.process" style="--i:1">How we work</a>
+      <a href="#styles" data-i18n="nav.styles" style="--i:2">Styles</a>
+      <a href="#help" data-i18n="nav.help" style="--i:3">Who we help</a>
+      <a href="#contact" data-i18n="nav.contact" style="--i:4">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary mobile-menu-cta" style="--i:5">
+      <span data-i18n="nav.cta">Start a project</span>
+      <span class="btn-icon" aria-hidden="true">
+        <svg viewBox="0 0 16 16" width="12" height="12"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container hero-top">
+      <div class="hero-copy reveal">
+        <span class="eyebrow" data-i18n="hero.eyebrow">Web design &amp; AI agents</span>
+        <h1 class="hero-title" data-i18n="hero.title">Websites and AI agents built for your business — not assembled from a template.</h1>
+        <p class="hero-sub" data-i18n="hero.sub">We design a real direction for your brand, build a working preview before anything goes live, and keep supporting it after launch.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <span data-i18n="hero.ctaPrimary">Start a project</span>
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="13" height="13"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+          <a href="#process" class="btn-circle" data-i18n-aria="hero.ctaSecondary" aria-label="See how we work">
+            <svg viewBox="0 0 16 16" width="15" height="15"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3D stage: tall scroll track with a sticky frame inside. Scrolling
+         through this block opens and turns the laptop — a self-contained
+         visual moment, independent from the pinned text section below. -->
+    <div class="hero-stage-track" id="hero-stage-track">
+      <div class="hero-stage" id="hero-stage">
+        <div class="hero-stage-frame">
+          <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-bleed marquee: idles at a constant crawl, speeds up while the
+         page is actually being scrolled. The repeated, purely decorative
+         copies are hidden from assistive tech (aria-hidden) — the same
+         "built for you, not assembled from a template" idea is already
+         stated plainly in the hero heading above, just for sighted users. -->
+    <div class="ticker" id="hero-ticker" aria-hidden="true">
+      <div class="ticker-track" id="ticker-track"></div>
+    </div>
+  </section>
+
+  <!-- ============ NARRATIVE (pinned, independent of the laptop) ============ -->
+  <section class="narrative" id="narrative">
+    <div class="narrative-track" id="narrative-track">
+      <div class="narrative-stage" id="narrative-stage">
+        <div class="container narrative-inner">
+          <div class="narrative-progress" aria-hidden="true"><div class="narrative-progress-bar" id="narrative-progress-bar"></div></div>
+          <span class="hero-counter narrative-counter"><span id="narrative-counter-num">01</span> / 04</span>
+          <p class="narrative-line" data-i18n="narrative.line0">We don't start with a template.</p>
+          <p class="narrative-line" data-i18n="narrative.line1">We start with your business — who it serves, what's already working, what's quietly costing you customers.</p>
+          <p class="narrative-line" data-i18n="narrative.line2">Then we design one real direction and build it as a working preview before anything goes live.</p>
+          <p class="narrative-line" data-i18n="narrative.line3">No guesswork, no surprises — that's the whole method.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track"></div>
+  </div>
+
+  <!-- ============ WHAT WE DO ============ -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title block-reveal reveal" data-i18n="work.title">Two things, done properly</h2>
+        <p class="section-sub" data-i18n="work.sub">We keep our focus narrow so both are built to last, not shipped fast and forgotten.</p>
+      </div>
+
+      <div class="card-grid card-grid-3">
+        <article class="panel-shell feature-card feature-card-lime reveal">
+          <div class="panel-core">
+            <span class="feature-index">01.</span>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 12h18M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9s1.3-6.3 3.8-9z" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.25" fill="none"/></svg>
+            </span>
+            <h3 data-i18n="work.card1.title">Custom websites</h3>
+            <p data-i18n="work.card1.text">No themes, no page builders. Every site is designed around how your business actually works and what your customers need to see first.</p>
+          </div>
+        </article>
+
+        <article class="panel-shell feature-card feature-card-dark reveal" style="--d:100ms">
+          <div class="panel-core">
+            <span class="feature-index">02.</span>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 5h16v11H8l-4 4V5z" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linejoin="round"/><circle cx="9" cy="10.5" r="1" fill="currentColor"/><circle cx="13" cy="10.5" r="1" fill="currentColor"/><circle cx="17" cy="10.5" r="1" fill="currentColor"/></svg>
+            </span>
+            <h3 data-i18n="work.card2.title">AI agents</h3>
+            <p data-i18n="work.card2.text">Assistants that answer questions, qualify leads, and respond outside business hours. A conversational chat widget is built when a project actually calls for one — not by default.</p>
+          </div>
+        </article>
+
+        <article class="panel-shell feature-card reveal" style="--d:200ms">
+          <div class="panel-core">
+            <span class="feature-index">03.</span>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M17.7 6.3l-2.1 2.1M8.4 15.6l-2.1 2.1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.25" fill="none"/></svg>
+            </span>
+            <h3 data-i18n="work.card3.title">Ongoing support</h3>
+            <p data-i18n="work.card3.text">A launch is a starting point. We keep tuning content, fixing issues, and adjusting the agent as your business changes.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE WORK ============ -->
+  <section class="section section-alt" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title" data-i18n="process.title">The same four steps, every time</h2>
+        <p class="section-sub" data-i18n="process.sub">No surprises — you see the direction and the preview before anything is public.</p>
+      </div>
+
+      <ol class="process-list">
+        <li class="process-item reveal">
+          <span class="process-index">01</span>
+          <div class="panel-shell process-panel">
+            <div class="panel-core">
+              <h3 data-i18n="process.s1.title">Understand</h3>
+              <p data-i18n="process.s1.text">We learn your business — customers, competitors, what's already working and what's quietly costing you leads.</p>
+            </div>
+          </div>
+        </li>
+        <li class="process-item reveal" style="--d:80ms">
+          <span class="process-index">02</span>
+          <div class="panel-shell process-panel">
+            <div class="panel-core">
+              <h3 data-i18n="process.s2.title">Direction</h3>
+              <p data-i18n="process.s2.text">We propose one real design direction, justified by your business — never picked from a template library.</p>
+            </div>
+          </div>
+        </li>
+        <li class="process-item reveal" style="--d:160ms">
+          <span class="process-index">03</span>
+          <div class="panel-shell process-panel">
+            <div class="panel-core">
+              <h3 data-i18n="process.s3.title">Preview</h3>
+              <p data-i18n="process.s3.text">You see and use a real, working preview of the site or agent before we publish anything.</p>
+            </div>
+          </div>
+        </li>
+        <li class="process-item reveal" style="--d:240ms">
+          <span class="process-index">04</span>
+          <div class="panel-shell process-panel">
+            <div class="panel-core">
+              <h3 data-i18n="process.s4.title">Launch &amp; support</h3>
+              <p data-i18n="process.s4.text">We publish, then stay on to support the site and agent as your business grows and changes.</p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ STYLES ============ -->
+  <section class="section" id="styles">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title" data-i18n="styles.title">We don't have one house style</h2>
+        <p class="section-sub" data-i18n="styles.sub">A direction is chosen for the business, not the other way around. Here are four we work in.</p>
+      </div>
+
+      <div class="card-grid card-grid-4">
+        <article class="panel-shell style-card style-card-active reveal" tabindex="0" role="button" aria-haspopup="dialog" data-style="editorial">
+          <div class="panel-core">
+            <div class="swatch-row swatch-row-lg">
+              <span class="swatch-dot" style="--sw:#F7F6F2"></span>
+              <span class="swatch-dot" style="--sw:#15171A"></span>
+              <span class="swatch-dot" style="--sw:#E0562F"></span>
+            </div>
+            <div class="style-card-images">
+              <img src="assets/references/editorial-kinfolk.jpg" alt="Kinfolk — kinfolk.com" loading="lazy">
+              <img src="assets/references/editorial-redantler.jpg" alt="Red Antler — redantler.com" loading="lazy">
+              <img src="assets/references/editorial-monocle.jpg" alt="Monocle — monocle.com" loading="lazy">
+            </div>
+            <h3 data-i18n="styles.card1.title">Editorial warmth</h3>
+            <p data-i18n="styles.card1.text">Warm cream, ink and one confident accent. For brands that want to feel considered — this page, for example.</p>
+            <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
+          </div>
+        </article>
+
+        <article class="panel-shell style-card reveal" style="--d:80ms" tabindex="0" role="button" aria-haspopup="dialog" data-style="brutal">
+          <div class="panel-core">
+            <div class="swatch-row swatch-row-lg">
+              <span class="swatch-dot" style="--sw:#0B0B08"></span>
+              <span class="swatch-dot" style="--sw:#8C1C1C"></span>
+              <span class="swatch-dot" style="--sw:#D4CEB8"></span>
+            </div>
+            <div class="style-card-images">
+              <img src="assets/references/brutal-mschf.jpg" alt="MSCHF — mschf.com" loading="lazy">
+              <img src="assets/references/brutal-gumroad.jpg" alt="Gumroad — gumroad.com" loading="lazy">
+              <img src="assets/references/brutal-supahero.jpg" alt="Supahero — supahero.io" loading="lazy">
+            </div>
+            <h3 data-i18n="styles.card2.title">Industrial brutalist</h3>
+            <p data-i18n="styles.card2.text">Near-black, one accent, exposed structure. For brands that trade on precision and grit.</p>
+            <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
+          </div>
+        </article>
+
+        <article class="panel-shell style-card reveal" style="--d:160ms" tabindex="0" role="button" aria-haspopup="dialog" data-style="collage">
+          <div class="panel-core">
+            <div class="swatch-row swatch-row-lg">
+              <span class="swatch-dot" style="--sw:#231935"></span>
+              <span class="swatch-dot" style="--sw:#ff6a3d"></span>
+              <span class="swatch-dot" style="--sw:#ffd23f"></span>
+            </div>
+            <div class="style-card-images">
+              <img src="assets/references/memphis-mailchimp.jpg" alt="Mailchimp — mailchimp.com" loading="lazy">
+              <img src="assets/references/memphis-slack.jpg" alt="Slack — slack.com" loading="lazy">
+              <img src="assets/references/memphis-airbnb.jpg" alt="Airbnb — airbnb.com" loading="lazy">
+            </div>
+            <h3 data-i18n="styles.card3.title">Vibrant collage</h3>
+            <p data-i18n="styles.card3.text">Layered color, tilted type, controlled overlap. For brands that want energy on the page.</p>
+            <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
+          </div>
+        </article>
+
+        <article class="panel-shell style-card reveal" style="--d:240ms" tabindex="0" role="button" aria-haspopup="dialog" data-style="glass">
+          <div class="panel-core">
+            <div class="swatch-row swatch-row-lg">
+              <span class="swatch-dot" style="--sw:#05060A"></span>
+              <span class="swatch-dot" style="--sw:#3B82F6"></span>
+              <span class="swatch-dot" style="--sw:#4CC9F0"></span>
+            </div>
+            <div class="style-card-images">
+              <img src="assets/references/glass-apple.jpg" alt="Apple — apple.com" loading="lazy">
+              <img src="assets/references/glass-robinhood.jpg" alt="Robinhood — robinhood.com" loading="lazy">
+              <img src="assets/references/glass-abstract.jpg" alt="Glass composition — visual reference" loading="lazy">
+            </div>
+            <h3 data-i18n="styles.card4.title">Minimal glass</h3>
+            <p data-i18n="styles.card4.text">Dark, technical, precise glass panels. For software and product-led brands.</p>
+            <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STYLE MODAL ============ -->
+  <dialog id="style-modal" class="style-modal">
+    <button type="button" class="style-modal-close" id="style-modal-close" aria-label="Close">
+      <svg viewBox="0 0 20 20" width="16" height="16"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+    </button>
+    <div class="style-modal-body">
+      <div class="style-modal-columns">
+        <div class="style-modal-col">
+          <div class="swatch-row swatch-row-lg" id="style-modal-swatches"></div>
+          <h3 class="style-modal-title" id="style-modal-title"></h3>
+          <p class="style-modal-tagline" id="style-modal-tagline"></p>
+          <dl class="style-modal-tokens" id="style-modal-tokens"></dl>
+        </div>
+        <div class="style-modal-col">
+          <div class="style-modal-poster" id="style-modal-poster"></div>
+          <span class="eyebrow eyebrow-sm" data-i18n="styles.modal.refs">Real references</span>
+          <div class="style-modal-examples" id="style-modal-examples"></div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ============ LEGAL MODALS ============ -->
+  <dialog id="privacy-modal" class="legal-modal">
+    <button type="button" class="legal-modal-close" id="privacy-modal-close" aria-label="Close">
+      <svg viewBox="0 0 20 20" width="16" height="16"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+    </button>
+    <div class="legal-modal-body">
+      <h3 class="legal-modal-title" data-i18n="footer.privacyHeading">Privacy</h3>
+      <div class="legal-modal-text" data-i18n="privacy.body">
+        <p><strong>Data controller:</strong> Suligon (in the process of registering as a business activity in Spain). Contact: suligonserv@gmail.com.</p>
+        <p><strong>What we collect:</strong> via the contact form — name, email, and your message. We don't collect anything automatically — this site doesn't use tracking, analytics, or advertising cookies.</p>
+        <p><strong>What we use it for:</strong> only to respond to your inquiry.</p>
+        <p><strong>Who we share it with:</strong> the contact form uses Web3Forms (web3forms.com) to deliver your message to us by email. This provider processes your name, email and message solely for this purpose.</p>
+        <p><strong>How long we keep it:</strong> only as long as needed to respond, and at most 12 months, unless there's an active business relationship.</p>
+        <p><strong>Your rights:</strong> you can request access, correction, or deletion of your data anytime by emailing suligonserv@gmail.com.</p>
+        <p><strong>Cookies:</strong> this site does not use first-party or third-party tracking, analytics, or advertising cookies.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="legal-modal" class="legal-modal">
+    <button type="button" class="legal-modal-close" id="legal-modal-close" aria-label="Close">
+      <svg viewBox="0 0 20 20" width="16" height="16"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+    </button>
+    <div class="legal-modal-body">
+      <h3 class="legal-modal-title" data-i18n="footer.legalHeading">Legal Notice</h3>
+      <div class="legal-modal-text" data-i18n="legal.body">
+        <p>Suligon is in the process of registering as a business activity in Spain. Full legal and tax details will be published here once that process is complete.</p>
+        <p><strong>Trading name:</strong> Suligon</p>
+        <p><strong>Contact email:</strong> suligonserv@gmail.com</p>
+        <!-- FALTA: NIF -->
+        <!-- FALTA: domicilio fiscal -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ============ WHO WE HELP ============ -->
+  <section class="section section-alt" id="help">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title" data-i18n="help.title">Three situations, one fix</h2>
+      </div>
+
+      <div class="panel-shell help-panel reveal">
+        <div class="panel-core help-core">
+          <div class="help-row">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 21V9l8-5 8 5v12" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linejoin="round"/><path d="M4 9l16 0M9 21v-6h6v6" stroke="currentColor" stroke-width="1.25" fill="none"/><line x1="16" y1="4" x2="20" y2="8" stroke="currentColor" stroke-width="1.25"/></svg>
+            </span>
+            <div class="help-copy">
+              <h3 data-i18n="help.card1.title">No website yet</h3>
+              <p data-i18n="help.card1.text">Your business is real, but online you don't exist. We build the site that should already be there.</p>
+            </div>
+          </div>
+
+          <div class="help-row">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.25" fill="none"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round"/></svg>
+            </span>
+            <div class="help-copy">
+              <h3 data-i18n="help.card2.title">Outdated website</h3>
+              <p data-i18n="help.card2.text">It was fine five years ago. Today it's costing you the customers who judge you in the first three seconds.</p>
+            </div>
+          </div>
+
+          <div class="help-row">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 5h16v11H8l-4 4V5z" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linejoin="round"/><path d="M9 20l3-3M12 17l3 3" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
+            </span>
+            <div class="help-copy">
+              <h3 data-i18n="help.card3.title">Missed inquiries</h3>
+              <p data-i18n="help.card3.text">A customer messages at 11pm and never hears back. We build agents that answer while you sleep.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container contact-inner">
+      <div class="section-head reveal">
+        <h2 class="section-title" data-i18n="contact.title">Tell us about your business</h2>
+        <p class="section-sub" data-i18n="contact.sub">We reply from suligonserv@gmail.com, usually within a day or two.</p>
+      </div>
+
+      <div class="panel-shell contact-panel reveal">
+        <div class="panel-core contact-core">
+
+          <!--
+            EMAIL DELIVERY: this form posts to Web3Forms (web3forms.com) with
+            Suligon's real access key below, so a submission here sends an
+            actual email to suligonserv@gmail.com — no backend of our own.
+            If that key ever needs replacing, get a new one at
+            https://web3forms.com (enter suligonserv@gmail.com, no account
+            needed) and swap the "access_key" value. If the key is missing
+            or the request fails, JS falls back to opening the visitor's own
+            email client instead (see main.js initContactForm).
+
+            If a Google Form is built later instead, replace this whole
+            <form id="contact-form">…</form> block with that form's <iframe>
+            embed and remove main.js's submit handler for #contact-form.
+          -->
+          <form id="contact-form" class="contact-form">
+            <input type="hidden" name="access_key" value="ecca99bb-99f6-4dd5-a419-f715021aa2d7">
+            <input type="hidden" name="subject" value="New message from suligon.com">
+            <input type="text" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="field">
+              <label for="cf-name" data-i18n="contact.form.name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email" data-i18n="contact.form.email">Email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-message" data-i18n="contact.form.message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" minlength="10" required aria-describedby="cf-message-hint"></textarea>
+              <span class="field-hint" id="cf-message-hint" data-i18n="contact.form.messageHint">Minimum 10 characters.</span>
+            </div>
+            <p class="form-required-note" data-i18n="contact.form.requiredNote">All fields are required.</p>
+            <button type="submit" class="btn btn-primary">
+              <span data-i18n="contact.form.submit">Send message</span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="13" height="13"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <p class="form-note" id="cf-note" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-direct">
+            <span class="eyebrow eyebrow-sm" data-i18n="contact.directLabel">Prefer email?</span>
+            <a href="mailto:suligonserv@gmail.com">suligonserv@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo16.png" alt="Suligon" class="brand-logo" data-logo-cutout>
+      <p data-i18n="footer.tagline">Custom websites and AI agents for local businesses in the US and Spain.</p>
+    </div>
+
+    <div class="footer-col">
+      <button type="button" class="footer-heading footer-link" id="privacy-link" aria-haspopup="dialog" data-i18n="footer.privacyHeading">Privacy</button>
+      <p data-i18n="footer.privacyText">No cookies, no tracking. Information sent through the contact form is used only to reply to you.</p>
+    </div>
+
+    <div class="footer-col">
+      <button type="button" class="footer-heading footer-link" id="legal-link" aria-haspopup="dialog" data-i18n="footer.legalHeading">Legal Notice</button>
+      <p data-i18n="footer.legalText">Suligon is in the process of registering as a business in Spain. Full legal and tax details will be published here once that's complete.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span data-i18n="footer.rights">© 2026 Suligon.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script type="module" src="js/hero-3d.js"></script>
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6aabd20ffbf5505014e6c7bf' },
+          url: 'https://general-runtime.voiceflow.com',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>
