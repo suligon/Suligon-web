@@ -427,36 +427,36 @@
       key: "minimalism",
       palette: ["#FFFFFF", "#0E0E0E", "#8A8A8A"],
       refs: [
-        ["Minimal Collective", "https://styles.refero.design/style/94c15607-2f19-4dc4-9aec-2b40f28b754f"],
-        ["Silencio", "https://styles.refero.design/style/e67ac20e-6497-4756-b7e2-17859a794fb6"],
-        ["Everlane", "https://styles.refero.design/style/34b4856c-cc2b-4164-ab90-1b87cf8e0213"],
+        ["Minimal Collective", "https://minimalcollective.digital"],
+        ["Silencio", "https://silencio.es"],
+        ["Everlane", "https://everlane.com"],
       ],
     },
     brutalism: {
       key: "brutalism",
       palette: ["#0B0B08", "#8C1C1C", "#D4CEB8"],
       refs: [
-        ["We Make Things", "https://styles.refero.design/style/15d57573-513b-49aa-91c7-1b7f87bb1a55"],
-        ["Charlie", "https://styles.refero.design/style/34aa811f-6084-484c-b4c0-f587b514e970"],
-        ["Eindhoven Design District", "https://styles.refero.design/style/c90b584e-de5b-4971-9e13-8ab991bd96c0"],
+        ["We Make Things", "https://wemakethings.de"],
+        ["Charlie", "https://charlielemaignan.com"],
+        ["Eindhoven Design District", "https://www.eindhovendesigndistrict.com"],
       ],
     },
     maximalism: {
       key: "maximalism",
       palette: ["#231935", "#FF6A3D", "#FFD23F"],
       refs: [
-        ["SICK AGENCY", "https://styles.refero.design/style/9ff03bd9-2ce0-474c-8c73-1905dbacc23b"],
-        ["Raw Materials", "https://styles.refero.design/style/274e85fb-a34d-4e41-9369-be03065b971b"],
-        ["Wise", "https://styles.refero.design/style/c5326639-873a-4257-ad1a-7da9111e9286"],
+        ["SICK AGENCY", "https://sick.agency"],
+        ["Raw Materials", "https://therawmaterials.com"],
+        ["Wise", "https://wise.design"],
       ],
     },
     glassmorphism: {
       key: "glass",
       palette: ["#05060A", "#3B82F6", "#4CC9F0"],
       refs: [
-        ["Dimension", "https://styles.refero.design/style/fbcf9cbb-7c6b-449d-862a-bce521a8ab1d"],
-        ["AuthKit", "https://styles.refero.design/style/e80231a2-e4d6-406a-a2c9-2e6109679690"],
-        ["Air", "https://styles.refero.design/style/d3289fe7-a85e-42d8-96b7-eb7faa62a104"],
+        ["Dimension", "https://www.dimension.dev"],
+        ["AuthKit", "https://authkit.com"],
+        ["Air", "https://air.inc"],
       ],
     },
   };
