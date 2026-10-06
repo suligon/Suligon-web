@@ -47,15 +47,58 @@
       "styles.title": "We don't have one house style",
       "styles.sub": "A direction is chosen for the business, not the other way around. Here are four we work in.",
       "styles.hint": "Explore this style",
-      "styles.modal.refs": "Real references",
-      "styles.card1.title": "Editorial warmth",
-      "styles.card1.text": "Warm cream, ink and one confident accent. For brands that want to feel considered — this page, for example.",
-      "styles.card2.title": "Industrial brutalist",
-      "styles.card2.text": "Near-black, one accent, exposed structure. For brands that trade on precision and grit.",
-      "styles.card3.title": "Vibrant collage",
-      "styles.card3.text": "Layered color, tilted type, controlled overlap. For brands that want energy on the page.",
-      "styles.card4.title": "Minimal glass",
-      "styles.card4.text": "Dark, technical, precise glass panels. For software and product-led brands.",
+      "styles.newtab": "(opens in a new tab)",
+      "styles.close": "Close",
+      "styles.card1.title": "Minimalism",
+      "styles.card1.text": "Typographic silence: one weight, lots of white, hierarchy by scale.",
+      "styles.card2.title": "Brutalism",
+      "styles.card2.text": "Black, white, and one raw accent. Giant type as structure, not decoration.",
+      "styles.card3.title": "Maximalism",
+      "styles.card3.text": "Several saturated colors, each owning its own section. Giant type with zero air between lines.",
+      "styles.card4.title": "Glassmorphism",
+      "styles.card4.text": "Frosted glass over near-black: depth through blur, never through shadow.",
+      "styles.alt.minimalism.1": "Minimal Collective: black hairline ellipses over a grey page, a chrome 3D logo and the headline 'Operating at the intersection of music, art and technology'",
+      "styles.alt.minimalism.2": "Silencio design studio: a pale grey page with a small centred uppercase statement and tiny two-column text, almost no ornament",
+      "styles.alt.minimalism.3": "Everlane home page: a woman in a green sweater on a light studio set under the headline 'Power of softness' and a thin uppercase menu",
+      "styles.alt.brutalism.1": "We Make Things GmbH: giant outlined letters behind uppercase black text about a bicycle accessories company in Cologne",
+      "styles.alt.brutalism.2": "Charlie type foundry: huge white custom lettering on a pure black page with three small pill-shaped menu links",
+      "styles.alt.brutalism.3": "Eindhoven Design District: oversized black sans-serif headings and architecture photos on a white page",
+      "styles.alt.maximalism.1": "SICK Agency: a green page with huge yellow condensed type, a blue circular stamp and repeated text bands",
+      "styles.alt.maximalism.2": "Raw Materials: giant black 'RM' lettering beside a column of saturated colour blocks in orange, purple, blue and pink",
+      "styles.alt.maximalism.3": "Wise: a bright lime-green page with a heavy dark headline about sending money abroad and a currency converter card",
+      "styles.alt.glass.1": "Dimension: 'The AI coworker that never sleeps' over a blurred blue-grey gradient with floating app icons in frosted glass",
+      "styles.alt.glass.2": "AuthKit by WorkOS: a glowing 'AuthKit' title on a near-black grid background with translucent login cards",
+      "styles.alt.glass.3": "Air: 'Your agent for creative tasks' on a purple-to-peach blurred gradient with three glass-like image cards",
+      "styles.cta.text": "Want to explore all our styles?",
+      "styles.cta.button": "Style Gallery",
+      "styles.cta.aria": "Open the Style Gallery (opens in a new tab)",
+      "styles.tok.l1": "Typography",
+      "styles.tok.l2": "Color",
+      "styles.tok.l3": "Hero paradigm",
+      "styles.tok.l4": "Layout paradigm",
+      "styles.tok.l5": "Signature detail",
+      "styles.palette": "Palette",
+      "styles.refs": "Reference sites",
+      "styles.tok.minimalism.1": "A single sans, often one weight (400) only — hierarchy by size and negative tracking, never by weight",
+      "styles.tok.minimalism.2": "Near-pure monochrome: black/white plus at most one very restrained gray or accent",
+      "styles.tok.minimalism.3": "Giant text (60–150px) over empty space, generous surrounding air, no background image",
+      "styles.tok.minimalism.4": "12-column grid or full-bleed with no container, constant vertical rhythm, 0px radii",
+      "styles.tok.minimalism.5": "1px hairlines instead of borders; negative micro-tracking at large sizes",
+      "styles.tok.brutalism.1": "Condensed sans or raw display at extreme size (150–860px), used as structural scaffolding, not just a headline",
+      "styles.tok.brutalism.2": "Pure black/white + a single unmuted accent (almost always red) reserved for one moment only",
+      "styles.tok.brutalism.3": "Type that breaks the viewport, or a dense uncurated portfolio grid — no traditional hero image",
+      "styles.tok.brutalism.4": "Exposed grid with 0px radius, with the single exception of fully pill-shaped buttons/nav",
+      "styles.tok.brutalism.5": "Zero shadows, zero gradients; contrast and scale alone carry the hierarchy",
+      "styles.tok.maximalism.1": "Heavy display (700–900) at extreme size (150–560px) with very tight line-height (0.70–0.85)",
+      "styles.tok.maximalism.2": "4+ saturated accents, each owning its own full-bleed section — zero neutral filler grays",
+      "styles.tok.maximalism.3": "A giant mascot or illustration + thick sticker-style lettering over a saturated color",
+      "styles.tok.maximalism.4": "Full-bleed section blocks with a hard color cut, generous consistent radius (16–86px)",
+      "styles.tok.maximalism.5": "Each color is “its own room,” never a subtle tint; no shadows — color contrast alone creates depth",
+      "styles.tok.glass.1": "Neutral geometric sans (DM Sans, Geist, Aeonik), medium weight 500, lets the surface lead",
+      "styles.tok.glass.2": "Near-black or nocturnal background + 10%-opacity white/blue translucent panels + one cool accent reserved for gradients",
+      "styles.tok.glass.3": "A glass surface or 3D render floating over a dark gradient background",
+      "styles.tok.glass.4": "Blurred cards with a subtle inset highlight border, very generous radii (16–40px) or pill-shaped buttons",
+      "styles.tok.glass.5": "Elevation from glow and translucency, never box-shadow; 1px white/blue border at 10–20% opacity",
 
       "help.title": "Three situations, one fix",
       "help.card1.title": "No website yet",
@@ -66,7 +109,7 @@
       "help.card3.text": "A customer messages at 11pm and never hears back. We build agents that answer while you sleep.",
 
       "contact.title": "Tell us about your business",
-      "contact.sub": "We reply from suligonserv@gmail.com, usually within a day or two.",
+      "contact.sub": "We reply from suligonwebs@gmail.com, usually within a day or two.",
       "contact.form.name": "Name",
       "contact.form.email": "Email",
       "contact.form.message": "Message",
@@ -85,8 +128,8 @@
       "footer.legalText": "Suligon is in the process of registering as a business in Spain. Full legal and tax details will be published here once that's complete.",
       "footer.rights": "© 2026 Suligon.",
 
-      "privacy.body": "<p><strong>Data controller:</strong> Suligon (in the process of registering as a business activity in Spain). Contact: suligonserv@gmail.com.</p><p><strong>What we collect:</strong> via the contact form — name, email, and your message. If you use the chat widget, whatever you type into it. We don't collect anything else automatically — this site doesn't use tracking, analytics, or advertising cookies.</p><p><strong>What we use it for:</strong> only to respond to your inquiry, whether sent through the form or the chat widget.</p><p><strong>Who we share it with:</strong> the contact form uses Web3Forms (web3forms.com) to deliver your message to us by email. The chat widget uses Voiceflow (voiceflow.com) to process your messages and generate responses. Each provider processes your data solely for that purpose.</p><p><strong>How long we keep it:</strong> contact form messages, only as long as needed to respond, and at most 12 months, unless there's an active business relationship. Chat conversations are stored in your own browser — so the conversation keeps working if you reload the page — until you clear your browser data, and on Voiceflow's servers under their own retention policy.</p><p><strong>Your rights:</strong> you can request access, correction, or deletion of your data anytime by emailing suligonserv@gmail.com.</p><p><strong>Cookies and local storage:</strong> this site does not use tracking, analytics, or advertising cookies. It does use your browser's local storage — not cookies — for two purely functional things: remembering your language choice (English/Spanish), and, if you use the chat widget, a randomly generated ID and your conversation history so the chat keeps working across page reloads. None of this is used to track you across other sites.</p>",
-      "legal.body": "<p>Suligon is in the process of registering as a business activity in Spain. Full legal and tax details will be published here once that process is complete.</p><p><strong>Trading name:</strong> Suligon</p><p><strong>Contact email:</strong> suligonserv@gmail.com</p><!-- FALTA: NIF --><!-- FALTA: domicilio fiscal -->"
+      "privacy.body": "<p><strong>Data controller:</strong> Suligon (in the process of registering as a business activity in Spain). Contact: suligonwebs@gmail.com.</p><p><strong>What we collect:</strong> via the contact form — name, email, and your message. If you use the chat widget, whatever you type into it. We don't collect anything else automatically — this site doesn't use tracking, analytics, or advertising cookies.</p><p><strong>What we use it for:</strong> only to respond to your inquiry, whether sent through the form or the chat widget.</p><p><strong>Who we share it with:</strong> the contact form uses Web3Forms (web3forms.com) to deliver your message to us by email. The chat widget uses Voiceflow (voiceflow.com) to process your messages and generate responses. Each provider processes your data solely for that purpose.</p><p><strong>How long we keep it:</strong> contact form messages, only as long as needed to respond, and at most 12 months, unless there's an active business relationship. Chat conversations are stored in your own browser — so the conversation keeps working if you reload the page — until you clear your browser data, and on Voiceflow's servers under their own retention policy.</p><p><strong>Your rights:</strong> you can request access, correction, or deletion of your data anytime by emailing suligonwebs@gmail.com.</p><p><strong>Cookies and local storage:</strong> this site does not use tracking, analytics, or advertising cookies. It does use your browser's local storage — not cookies — for two purely functional things: remembering your language choice (English/Spanish), and, if you use the chat widget, a randomly generated ID and your conversation history so the chat keeps working across page reloads. None of this is used to track you across other sites.</p>",
+      "legal.body": "<p>Suligon is in the process of registering as a business activity in Spain. Full legal and tax details will be published here once that process is complete.</p><p><strong>Trading name:</strong> Suligon</p><p><strong>Contact email:</strong> suligonwebs@gmail.com</p><!-- FALTA: NIF --><!-- FALTA: domicilio fiscal -->"
     },
     es: {
       "skip": "Ir al contenido",
@@ -132,15 +175,58 @@
       "styles.title": "No tenemos un estilo único",
       "styles.sub": "La dirección se elige para el negocio, no al revés. Estos son cuatro estilos con los que trabajamos.",
       "styles.hint": "Explorar este estilo",
-      "styles.modal.refs": "Referencias reales",
-      "styles.card1.title": "Calidez editorial",
-      "styles.card1.text": "Crema cálido, tinta y un único acento con carácter. Para marcas que quieren sentirse cuidadas — esta misma página, por ejemplo.",
-      "styles.card2.title": "Industrial brutalista",
-      "styles.card2.text": "Casi negro, un único acento, estructura expuesta. Para marcas que se apoyan en precisión y carácter.",
-      "styles.card3.title": "Collage vibrante",
-      "styles.card3.text": "Color en capas, tipografía inclinada, solape controlado. Para marcas que quieren energía en pantalla.",
-      "styles.card4.title": "Minimalista de cristal",
-      "styles.card4.text": "Oscuro, técnico, con paneles de cristal precisos. Para marcas de software y producto.",
+      "styles.newtab": "(se abre en una pestaña nueva)",
+      "styles.close": "Cerrar",
+      "styles.card1.title": "Minimalismo",
+      "styles.card1.text": "Silencio tipográfico: un solo peso, mucho blanco, jerarquía por tamaño.",
+      "styles.card2.title": "Brutalism",
+      "styles.card2.text": "Negro, blanco y un solo acento crudo. Tipografía gigante como estructura, no como decoración.",
+      "styles.card3.title": "Maximalismo",
+      "styles.card3.text": "Varios colores saturados, cada uno su propia sección. Tipografía gigante sin aire entre líneas.",
+      "styles.card4.title": "Glassmorphism",
+      "styles.card4.text": "Vidrio esmerilado sobre fondo casi negro: profundidad por blur, nunca por sombra.",
+      "styles.alt.minimalism.1": "Minimal Collective: elipses negras de línea fina sobre página gris, un logotipo 3D cromado y el titular «Operating at the intersection of music, art and technology»",
+      "styles.alt.minimalism.2": "Estudio de diseño Silencio: página gris claro con un breve texto centrado en mayúsculas y texto diminuto a dos columnas, casi sin ornamento",
+      "styles.alt.minimalism.3": "Portada de Everlane: una mujer con jersey verde en un set de estudio claro bajo el titular «Power of softness» y un menú fino en mayúsculas",
+      "styles.alt.brutalism.1": "We Make Things GmbH: letras gigantes en contorno tras texto negro en mayúsculas sobre una empresa de accesorios de bicicleta en Colonia",
+      "styles.alt.brutalism.2": "Fundición tipográfica Charlie: rotulación blanca enorme sobre una página negra con tres enlaces de menú en forma de píldora",
+      "styles.alt.brutalism.3": "Eindhoven Design District: titulares sans-serif negros sobredimensionados y fotos de arquitectura sobre fondo blanco",
+      "styles.alt.maximalism.1": "SICK Agency: página verde con tipografía condensada amarilla enorme, un sello circular azul y bandas de texto repetidas",
+      "styles.alt.maximalism.2": "Raw Materials: letras «RM» negras gigantes junto a una columna de bloques de color saturado en naranja, morado, azul y rosa",
+      "styles.alt.maximalism.3": "Wise: página verde lima brillante con un titular oscuro y grueso sobre enviar dinero al extranjero y una tarjeta de conversión de divisas",
+      "styles.alt.glass.1": "Dimension: «El compañero de IA que nunca duerme» sobre un degradado azul grisáceo desenfocado con iconos de apps flotando en cristal esmerilado",
+      "styles.alt.glass.2": "AuthKit de WorkOS: título luminoso «AuthKit» sobre un fondo de cuadrícula casi negro con tarjetas de inicio de sesión translúcidas",
+      "styles.alt.glass.3": "Air: «Tu agente para tareas creativas» sobre un degradado desenfocado de morado a melocotón con tres tarjetas de imagen translúcidas",
+      "styles.cta.text": "¿Quieres descubrir todos los estilos?",
+      "styles.cta.button": "Style Gallery",
+      "styles.cta.aria": "Abrir la Style Gallery (se abre en una pestaña nueva)",
+      "styles.tok.l1": "Tipografía",
+      "styles.tok.l2": "Color",
+      "styles.tok.l3": "Paradigma de hero",
+      "styles.tok.l4": "Paradigma de layout",
+      "styles.tok.l5": "Detalle de firma",
+      "styles.palette": "Paleta",
+      "styles.refs": "Webs de referencia",
+      "styles.tok.minimalism.1": "Una sola sans, a menudo un único peso (400) — jerarquía solo por tamaño y tracking negativo, nunca por peso",
+      "styles.tok.minimalism.2": "Monocromo casi puro: negro/blanco + como mucho un gris o acento muy contenido",
+      "styles.tok.minimalism.3": "Texto gigante (60–150px) sobre fondo vacío, aire generoso alrededor, sin imagen de fondo",
+      "styles.tok.minimalism.4": "Grid de 12 columnas o full-bleed sin contenedor, ritmo vertical constante, radios 0px",
+      "styles.tok.minimalism.5": "Hairlines de 1px en vez de bordes; micro-tracking negativo en los tamaños grandes",
+      "styles.tok.brutalism.1": "Sans condensada o display crudo a tamaño extremo (150–860px), usada como andamiaje visual, no solo como titular",
+      "styles.tok.brutalism.2": "Blanco/negro puro + un único acento sin matizar (casi siempre rojo) reservado para un solo momento",
+      "styles.tok.brutalism.3": "Tipografía que rompe el viewport, o grid de portfolio denso sin curar — sin imagen hero tradicional",
+      "styles.tok.brutalism.4": "Grid expuesto sin radio (0px), con la única excepción de botones/nav en pill (rounded total)",
+      "styles.tok.brutalism.5": "Cero sombras, cero degradados; el contraste y el tamaño hacen todo el trabajo de jerarquía",
+      "styles.tok.maximalism.1": "Display pesado (700–900) a tamaño extremo (150–560px) con line-height muy ajustado (0.70–0.85)",
+      "styles.tok.maximalism.2": "4 o más acentos saturados, cada uno dueño de su propia sección a sangre — cero grises de relleno",
+      "styles.tok.maximalism.3": "Mascota o ilustración gigante + rotulación gruesa tipo sticker sobre un color saturado",
+      "styles.tok.maximalism.4": "Bloques de sección a sangre con corte duro de color, radio generoso y consistente (16–86px)",
+      "styles.tok.maximalism.5": "Cada color es «una habitación», nunca un matiz sutil; sin sombras — el contraste de color da la profundidad",
+      "styles.tok.glass.1": "Sans geométrica neutra (DM Sans, Geist, Aeonik), peso medio 500, deja protagonismo a la superficie",
+      "styles.tok.glass.2": "Fondo casi negro o nocturno + paneles translúcidos blancos/azules al 10% + un acento frío único en gradiente",
+      "styles.tok.glass.3": "Superficie de cristal o render 3D flotando sobre fondo degradado oscuro",
+      "styles.tok.glass.4": "Tarjetas con blur y borde interior sutil (inset highlight), radios muy generosos (16–40px) o pill en botones",
+      "styles.tok.glass.5": "Elevación por glow y translucidez, nunca box-shadow; borde de 1px en blanco/azul al 10–20% de opacidad",
 
       "help.title": "Tres situaciones, una solución",
       "help.card1.title": "Todavía sin web",
@@ -151,7 +237,7 @@
       "help.card3.text": "Un cliente escribe a las 11 de la noche y nunca recibe respuesta. Construimos asistentes que responden mientras duermes.",
 
       "contact.title": "Cuéntanos sobre tu negocio",
-      "contact.sub": "Respondemos desde suligonserv@gmail.com, normalmente en uno o dos días.",
+      "contact.sub": "Respondemos desde suligonwebs@gmail.com, normalmente en uno o dos días.",
       "contact.form.name": "Nombre",
       "contact.form.email": "Email",
       "contact.form.message": "Mensaje",
@@ -170,8 +256,8 @@
       "footer.legalText": "Suligon está en proceso de darse de alta como negocio en España. Los datos legales y fiscales completos se publicarán aquí en cuanto esté finalizado.",
       "footer.rights": "© 2026 Suligon.",
 
-      "privacy.body": "<p><strong>Responsable:</strong> Suligon (en proceso de alta como actividad económica en España). Contacto: suligonserv@gmail.com.</p><p><strong>Qué recopilamos:</strong> a través del formulario de contacto — nombre, email y tu mensaje. Si usas el widget de chat, lo que escribas en él. No recopilamos nada más de forma automática — este sitio no utiliza cookies de rastreo, analítica ni publicidad.</p><p><strong>Para qué lo usamos:</strong> únicamente para responder a tu consulta, ya sea enviada por el formulario o por el chat.</p><p><strong>Con quién lo compartimos:</strong> el formulario de contacto utiliza Web3Forms (web3forms.com) para hacernos llegar tu mensaje por email. El widget de chat utiliza Voiceflow (voiceflow.com) para procesar tus mensajes y generar las respuestas. Cada proveedor procesa tus datos únicamente para ese fin.</p><p><strong>Cuánto tiempo lo conservamos:</strong> los mensajes del formulario, solo el tiempo necesario para responder, y como máximo 12 meses, salvo que exista una relación comercial activa. Las conversaciones del chat se guardan en tu propio navegador — para que la conversación siga funcionando si recargas la página — hasta que borres los datos de tu navegador, y en los servidores de Voiceflow según su propia política de retención.</p><p><strong>Tus derechos:</strong> puedes solicitar el acceso, rectificación o eliminación de tus datos en cualquier momento escribiendo a suligonserv@gmail.com.</p><p><strong>Cookies y almacenamiento local:</strong> este sitio no utiliza cookies de rastreo, analítica ni publicidad. Sí utiliza el almacenamiento local de tu navegador — no cookies — para dos fines puramente funcionales: recordar tu idioma (español/inglés) y, si usas el widget de chat, un identificador generado aleatoriamente y el historial de la conversación, para que el chat siga funcionando aunque recargues la página. Nada de esto se usa para rastrearte en otros sitios.</p>",
-      "legal.body": "<p>Suligon está en proceso de alta como actividad económica en España. Los datos legales y fiscales completos se publicarán aquí en cuanto ese proceso esté finalizado.</p><p><strong>Nombre de la actividad:</strong> Suligon</p><p><strong>Email de contacto:</strong> suligonserv@gmail.com</p><!-- FALTA: NIF --><!-- FALTA: domicilio fiscal -->"
+      "privacy.body": "<p><strong>Responsable:</strong> Suligon (en proceso de alta como actividad económica en España). Contacto: suligonwebs@gmail.com.</p><p><strong>Qué recopilamos:</strong> a través del formulario de contacto — nombre, email y tu mensaje. Si usas el widget de chat, lo que escribas en él. No recopilamos nada más de forma automática — este sitio no utiliza cookies de rastreo, analítica ni publicidad.</p><p><strong>Para qué lo usamos:</strong> únicamente para responder a tu consulta, ya sea enviada por el formulario o por el chat.</p><p><strong>Con quién lo compartimos:</strong> el formulario de contacto utiliza Web3Forms (web3forms.com) para hacernos llegar tu mensaje por email. El widget de chat utiliza Voiceflow (voiceflow.com) para procesar tus mensajes y generar las respuestas. Cada proveedor procesa tus datos únicamente para ese fin.</p><p><strong>Cuánto tiempo lo conservamos:</strong> los mensajes del formulario, solo el tiempo necesario para responder, y como máximo 12 meses, salvo que exista una relación comercial activa. Las conversaciones del chat se guardan en tu propio navegador — para que la conversación siga funcionando si recargas la página — hasta que borres los datos de tu navegador, y en los servidores de Voiceflow según su propia política de retención.</p><p><strong>Tus derechos:</strong> puedes solicitar el acceso, rectificación o eliminación de tus datos en cualquier momento escribiendo a suligonwebs@gmail.com.</p><p><strong>Cookies y almacenamiento local:</strong> este sitio no utiliza cookies de rastreo, analítica ni publicidad. Sí utiliza el almacenamiento local de tu navegador — no cookies — para dos fines puramente funcionales: recordar tu idioma (español/inglés) y, si usas el widget de chat, un identificador generado aleatoriamente y el historial de la conversación, para que el chat siga funcionando aunque recargues la página. Nada de esto se usa para rastrearte en otros sitios.</p>",
+      "legal.body": "<p>Suligon está en proceso de alta como actividad económica en España. Los datos legales y fiscales completos se publicarán aquí en cuanto ese proceso esté finalizado.</p><p><strong>Nombre de la actividad:</strong> Suligon</p><p><strong>Email de contacto:</strong> suligonwebs@gmail.com</p><!-- FALTA: NIF --><!-- FALTA: domicilio fiscal -->"
     }
   };
 
@@ -197,6 +283,10 @@
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
       const key = el.getAttribute("data-i18n-aria");
       if (table[key] !== undefined) el.setAttribute("aria-label", table[key]);
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-alt");
+      if (table[key] !== undefined) el.setAttribute("alt", table[key]);
     });
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.classList.toggle("is-active", btn.dataset.lang === lang);
@@ -326,180 +416,282 @@
     });
   }
 
-  /* ============ style cards: click to swap swatches for real references ============ */
-  const STYLE_DATA = {
-    editorial: {
-      swatches: ["#F7F6F2", "#15171A", "#E0562F"],
-      poster: { cls: "p-editorial", html: '<div class="pm-h">Built for you, not a template.<span class="pm-dot"></span></div><span class="pm-cta">Start a project</span>' },
-      examples: [
-        { src: "assets/references/editorial-kinfolk.jpg", url: "https://kinfolk.com", en: "Kinfolk — kinfolk.com", es: "Kinfolk — kinfolk.com" },
-        { src: "assets/references/editorial-redantler.jpg", url: "https://redantler.com", en: "Red Antler — redantler.com", es: "Red Antler — redantler.com" },
-        { src: "assets/references/editorial-monocle.jpg", url: "https://monocle.com", en: "Monocle — monocle.com", es: "Monocle — monocle.com" },
+  /* ============ style cards: compact tiles + one big panel over the grid ============
+     The four tiles stay small and never resize. Hovering (or keyboard-focusing)
+     a tile opens a big panel centered over the whole group of four, with the
+     style's palette, explanation and reference sites; clicking / tapping /
+     pressing Enter pins it. A pinned panel closes with its X, Esc, or a click
+     outside. One panel at a time; transform + opacity only. */
+  const STYLE_INFO = {
+    minimalism: {
+      key: "minimalism",
+      palette: ["#FFFFFF", "#0E0E0E", "#8A8A8A"],
+      refs: [
+        ["Minimal Collective", "https://styles.refero.design/style/94c15607-2f19-4dc4-9aec-2b40f28b754f"],
+        ["Silencio", "https://styles.refero.design/style/e67ac20e-6497-4756-b7e2-17859a794fb6"],
+        ["Everlane", "https://styles.refero.design/style/34b4856c-cc2b-4164-ab90-1b87cf8e0213"],
       ],
-      en: {
-        name: "Editorial warmth", tagline: "Warm cream, ink and one confident accent — the direction this very site uses.",
-        tokens: {
-          "Typography": "Geometric sans for display and body, a tracked mono for labels — clarity over decoration.",
-          "Color": "Warm cream base, near-black ink, a single terracotta-orange accent.",
-          "Hero paradigm": "A pinned visual with narrative text that brightens line by line as you scroll.",
-          "Layout paradigm": "Bordered cards on a cream ground, alternating light, dark and accent for rhythm.",
-          "Signature detail": "The logo cut straight from the brand's own mark — never a stock template palette."
-        }
-      },
-      es: {
-        name: "Calidez editorial", tagline: "Crema cálido, tinta y un acento con carácter — la dirección que usa esta misma web.",
-        tokens: {
-          "Tipografía": "Sans geométrica para titulares y cuerpo, mono tracked para etiquetas — claridad antes que decoración.",
-          "Color": "Base crema cálida, tinta casi negra, un único acento naranja terracota.",
-          "Paradigma de hero": "Un visual fijo con texto narrativo que se ilumina línea a línea al hacer scroll.",
-          "Paradigma de layout": "Tarjetas con borde sobre fondo crema, alternando claro, oscuro y acento para dar ritmo.",
-          "Detalle de firma": "El logo recortado de la propia marca — nunca una paleta de plantilla genérica."
-        }
-      }
     },
-    brutal: {
-      swatches: ["#0B0B08", "#8C1C1C", "#D4CEB8"],
-      poster: { cls: "p-brutal", html: '<div class="pm-h">We don’t blend in.</div><span class="pm-cta">Book now</span>' },
-      examples: [
-        { src: "assets/references/brutal-mschf.jpg", url: "https://mschf.com", en: "MSCHF — mschf.com", es: "MSCHF — mschf.com" },
-        { src: "assets/references/brutal-gumroad.jpg", url: "https://gumroad.com", en: "Gumroad — gumroad.com", es: "Gumroad — gumroad.com" },
-        { src: "assets/references/brutal-supahero.jpg", url: "https://supahero.io", en: "Supahero — supahero.io", es: "Supahero — supahero.io" },
+    brutalism: {
+      key: "brutalism",
+      palette: ["#0B0B08", "#8C1C1C", "#D4CEB8"],
+      refs: [
+        ["We Make Things", "https://styles.refero.design/style/15d57573-513b-49aa-91c7-1b7f87bb1a55"],
+        ["Charlie", "https://styles.refero.design/style/34aa811f-6084-484c-b4c0-f587b514e970"],
+        ["Eindhoven Design District", "https://styles.refero.design/style/c90b584e-de5b-4971-9e13-8ab991bd96c0"],
       ],
-      en: {
-        name: "Industrial brutalist", tagline: "Near-black, one hard accent, structure left exposed on purpose.",
-        tokens: {
-          "Typography": "System sans, weight 900, uppercase, tight tracking — Courier New for data and labels.",
-          "Color": "Warm void black, a single blood-carmine accent, parchment cream text.",
-          "Hero paradigm": "Full-viewport background, a dark gradient overlay, copy pinned bottom-left.",
-          "Layout paradigm": "Exposed grid with 1px rules — no border-radius anywhere on the page.",
-          "Signature detail": "A fixed dot-grid texture underneath everything, like a technical blueprint."
-        }
-      },
-      es: {
-        name: "Industrial brutalista", tagline: "Casi negro, un acento duro, estructura expuesta a propósito.",
-        tokens: {
-          "Tipografía": "Sans de sistema, peso 900, mayúsculas, tracking cerrado — Courier New para datos y etiquetas.",
-          "Color": "Negro void cálido, un único acento carmesí, texto crema parchment.",
-          "Paradigma de hero": "Fondo a pantalla completa, degradado oscuro superpuesto, texto anclado abajo-izquierda.",
-          "Paradigma de layout": "Grid expuesto con líneas de 1px — sin border-radius en ninguna parte.",
-          "Detalle de firma": "Una textura de puntos fija bajo todo, como un plano técnico."
-        }
-      }
     },
-    collage: {
-      swatches: ["#231935", "#ff6a3d", "#ffd23f"],
-      poster: { cls: "p-collage", html: '<div class="pm-h">Loud on purpose.</div><span class="pm-cta">Say hi</span>' },
-      examples: [
-        { src: "assets/references/memphis-mailchimp.jpg", url: "https://mailchimp.com", en: "Mailchimp — mailchimp.com", es: "Mailchimp — mailchimp.com" },
-        { src: "assets/references/memphis-slack.jpg", url: "https://slack.com", en: "Slack — slack.com", es: "Slack — slack.com" },
-        { src: "assets/references/memphis-airbnb.jpg", url: "https://airbnb.com", en: "Airbnb — airbnb.com", es: "Airbnb — airbnb.com" },
+    maximalism: {
+      key: "maximalism",
+      palette: ["#231935", "#FF6A3D", "#FFD23F"],
+      refs: [
+        ["SICK AGENCY", "https://styles.refero.design/style/9ff03bd9-2ce0-474c-8c73-1905dbacc23b"],
+        ["Raw Materials", "https://styles.refero.design/style/274e85fb-a34d-4e41-9369-be03065b971b"],
+        ["Wise", "https://styles.refero.design/style/c5326639-873a-4257-ad1a-7da9111e9286"],
       ],
-      en: {
-        name: "Vibrant collage", tagline: "Layered color, tilted type, controlled overlap.",
-        tokens: {
-          "Typography": "Bebas Neue display, Work Sans body, JetBrains Mono tracked labels.",
-          "Color": "Deep violet void with orange and yellow — no neutral filler.",
-          "Hero paradigm": "A rotated headline with solid and outlined circles overlapping the type.",
-          "Layout paradigm": "Cards tilted at alternating angles via a per-card rotation variable.",
-          "Signature detail": "A literal circle-seal stamped over the wordmark, like a hand-stamped badge."
-        }
-      },
-      es: {
-        name: "Collage vibrante", tagline: "Color en capas, tipografía inclinada, solape controlado.",
-        tokens: {
-          "Tipografía": "Bebas Neue en titulares, Work Sans en cuerpo, JetBrains Mono tracked en etiquetas.",
-          "Color": "Violeta void profundo con naranja y amarillo — sin relleno neutro.",
-          "Paradigma de hero": "Titular rotado con círculos sólidos y con borde superpuestos al texto.",
-          "Paradigma de layout": "Tarjetas inclinadas en ángulos alternos vía una variable de rotación por tarjeta.",
-          "Detalle de firma": "Un sello circular literal estampado sobre el logotipo, como un timbre a mano."
-        }
-      }
     },
-    glass: {
-      swatches: ["#05060A", "#3B82F6", "#4CC9F0"],
-      poster: { cls: "p-glass", html: '<div class="pm-h">Precision, without the noise.</div><span class="pm-cta">Get a quote</span>' },
-      examples: [
-        { src: "assets/references/glass-apple.jpg", url: "https://apple.com", en: "Apple — apple.com", es: "Apple — apple.com" },
-        { src: "assets/references/glass-robinhood.jpg", url: "https://robinhood.com", en: "Robinhood — robinhood.com", es: "Robinhood — robinhood.com" },
-        { src: "assets/references/glass-abstract.jpg", url: null, en: "Glass composition — visual reference", es: "Composición glass — referencia visual" },
+    glassmorphism: {
+      key: "glass",
+      palette: ["#05060A", "#3B82F6", "#4CC9F0"],
+      refs: [
+        ["Dimension", "https://styles.refero.design/style/fbcf9cbb-7c6b-449d-862a-bce521a8ab1d"],
+        ["AuthKit", "https://styles.refero.design/style/e80231a2-e4d6-406a-a2c9-2e6109679690"],
+        ["Air", "https://styles.refero.design/style/d3289fe7-a85e-42d8-96b7-eb7faa62a104"],
       ],
-      en: {
-        name: "Minimal glass", tagline: "Dark, technical, precise — frosted glass over a blueprint grid.",
-        tokens: {
-          "Typography": "System-ui, weight 700 display, tracked mono labels.",
-          "Color": "Near-black void, a blue-to-cyan gradient accent.",
-          "Hero paradigm": "A technical grid backdrop with double-bezel glass panels floating above it.",
-          "Layout paradigm": "Frosted glass cards — concentric outer-shell and inner-core radii.",
-          "Signature detail": "The same top-left light bloom repeated on every glass panel, site-wide."
-        }
-      },
-      es: {
-        name: "Minimalista de cristal", tagline: "Oscuro, técnico, preciso — cristal esmerilado sobre una retícula de plano.",
-        tokens: {
-          "Tipografía": "System-ui, peso 700 en titulares, etiquetas mono tracked.",
-          "Color": "Void casi negro, acento en degradado azul a cian.",
-          "Paradigma de hero": "Retícula técnica de fondo con paneles de cristal de doble bisel flotando sobre ella.",
-          "Paradigma de layout": "Tarjetas de cristal esmerilado — radios concéntricos de marco exterior e interior.",
-          "Detalle de firma": "El mismo resplandor de luz superior-izquierda repetido en cada panel de cristal, en toda la web."
-        }
-      }
-    }
+    },
   };
 
   function initStyleCards(){
-    const modal = document.getElementById("style-modal");
-    const cards = document.querySelectorAll(".style-card");
-    if (!modal || !cards.length) return;
+    const section = document.getElementById("styles");
+    const grid = document.querySelector("#styles .card-grid");
+    const cards = Array.from(document.querySelectorAll(".style-card"));
+    if (!grid || !cards.length) return;
 
-    const closeBtn = document.getElementById("style-modal-close");
-    const elSwatches = document.getElementById("style-modal-swatches");
-    const elTitle = document.getElementById("style-modal-title");
-    const elTagline = document.getElementById("style-modal-tagline");
-    const elPoster = document.getElementById("style-modal-poster");
-    const elTokens = document.getElementById("style-modal-tokens");
-    const elExamples = document.getElementById("style-modal-examples");
+    const GALLERY_URL = "https://styleweb.suligonserv.workers.dev/";
+    const HOVER_DELAY = 120;   // ms before a hover opens the panel (no flicker crossing the grid)
+    const EDGE = 12;           // min gap between the panel and the viewport edge
+    const TOP_LIMIT = 96;      // stay clear of the floating header pills
+    const MAX_W = 980;
+    const REF_SIZES = "(min-width: 700px) 300px, 88vw";
 
-    function openStyle(key){
-      const data = STYLE_DATA[key];
-      if (!data) return;
-      const lang = root.lang === "es" ? "es" : "en";
-      const copy = data[lang];
+    const ICON_CLOSE = '<svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>';
+    const ICON_ARROW = '<svg class="style-card-pop-arrow" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
-      elSwatches.innerHTML = data.swatches.map((c) => `<span class="swatch-dot" style="--sw:${c}"></span>`).join("");
-      elTitle.textContent = copy.name;
-      elTagline.textContent = copy.tagline;
-      elPoster.className = "style-modal-poster " + data.poster.cls;
-      elPoster.innerHTML = data.poster.html;
-      elTokens.innerHTML = Object.entries(copy.tokens)
-        .map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`)
-        .join("");
-      elExamples.innerHTML = data.examples
-        .map((ex) => {
-          const label = ex[lang];
-          const inner = `<img src="${ex.src}" alt="${label}" loading="lazy"><span>${label}</span>`;
-          return ex.url
-            ? `<a href="${ex.url}" target="_blank" rel="noopener noreferrer">${inner}</a>`
-            : `<div>${inner}</div>`;
-        })
-        .join("");
+    const t = (key) => (dict[root.lang] || dict.en)[key] || "";
+    const canHover = () => window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
-      modal.showModal();
+    let current = null;       // the single open entry, if any
+    let pinned = false;       // true once it was fixed by click / tap / Enter
+    let ignoreFocus = false;  // set while we move focus ourselves, so it doesn't re-open
+
+    function buildPop(card, face){
+      const name = card.dataset.style;
+      const info = STYLE_INFO[name];
+      const titleKey = face.querySelector("h3").dataset.i18n;          // styles.cardN.title
+      const textKey = titleKey.replace(".title", ".text");
+      const pop = document.createElement("div");
+      pop.className = "style-card-pop";
+      pop.id = `style-pop-${name}`;
+      pop.setAttribute("role", "region");
+      pop.setAttribute("aria-labelledby", `${pop.id}-title`);
+
+      const tokens = [1, 2, 3, 4, 5].map((n) =>
+        `<div><dt data-i18n="styles.tok.l${n}">${t(`styles.tok.l${n}`)}</dt>` +
+        `<dd data-i18n="styles.tok.${info.key}.${n}">${t(`styles.tok.${info.key}.${n}`)}</dd></div>`
+      ).join("");
+      const palette = info.palette.map((hex) =>
+        `<li><span class="style-card-pop-dot" style="--sw:${hex}"></span><code>${hex}</code></li>`
+      ).join("");
+      const refs = info.refs.map(([site, url], i) =>
+        `<li><a class="style-card-pop-ref" href="${url}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-labelledby="${pop.id}-r${i}n ${pop.id}-r${i}t">` +
+        `<span class="style-card-pop-shot"></span>` +
+        `<span class="style-card-pop-refname"><span id="${pop.id}-r${i}n">${site}</span> ↗` +
+        `<span class="sr-only" id="${pop.id}-r${i}t" data-i18n="styles.newtab">${t("styles.newtab")}</span></span></a></li>`
+      ).join("");
+
+      pop.innerHTML =
+        `<button type="button" class="style-card-pop-close" tabindex="-1" data-i18n-aria="styles.close" aria-label="${t("styles.close")}">${ICON_CLOSE}</button>` +
+        `<div class="style-card-pop-top">` +
+          `<div class="style-card-pop-intro">` +
+            `<span class="style-card-pop-label" data-i18n="styles.palette">${t("styles.palette")}</span>` +
+            `<ul class="style-card-pop-palette">${palette}</ul>` +
+            `<h3 id="${pop.id}-title" data-i18n="${titleKey}">${t(titleKey)}</h3>` +
+            `<p data-i18n="${textKey}">${t(textKey)}</p>` +
+            `<a class="style-card-pop-link" href="${GALLERY_URL}" target="_blank" rel="noopener noreferrer" tabindex="-1">` +
+              `<span data-i18n="styles.hint">${t("styles.hint")}</span>` +
+              ` <span class="sr-only" data-i18n="styles.newtab">${t("styles.newtab")}</span>${ICON_ARROW}</a>` +
+          `</div>` +
+          `<dl class="style-card-pop-tokens">${tokens}</dl>` +
+        `</div>` +
+        `<span class="style-card-pop-label" data-i18n="styles.refs">${t("styles.refs")}</span>` +
+        `<ul class="style-card-pop-refs">${refs}</ul>`;
+
+      // reference screenshots: same files as the tile thumbnails (already cached),
+      // so nothing is fetched or flickers when the panel opens
+      const shots = pop.querySelectorAll(".style-card-pop-shot");
+      face.querySelectorAll(".style-card-images picture").forEach((pic, i) => {
+        const clone = pic.cloneNode(true);
+        clone.querySelectorAll("source, img").forEach((n) => n.setAttribute("sizes", REF_SIZES));
+        if (shots[i]) shots[i].appendChild(clone);
+      });
+
+      card.appendChild(pop);
+      face.setAttribute("aria-controls", pop.id);
+      return {
+        pop,
+        closeBtn: pop.querySelector(".style-card-pop-close"),
+        controls: Array.from(pop.querySelectorAll(".style-card-pop-close, .style-card-pop-ref, .style-card-pop-link")),
+      };
+    }
+
+    // Size and position the panel (offsets are relative to its tile), centered over
+    // the whole grid and kept fully inside the viewport. The transform-origin makes
+    // the "closed" pose sit exactly on top of the tile, so it grows out of it.
+    function place(e){
+      const cr = e.card.getBoundingClientRect();
+      const gr = grid.getBoundingClientRect();
+      const vw = document.documentElement.clientWidth;
+      const vh = window.innerHeight;
+
+      let W = Math.min(Math.max(gr.width, 600), MAX_W);
+      W = Math.min(W, vw - EDGE * 2);
+      const maxH = vh - TOP_LIMIT - EDGE;
+
+      const pop = e.pop;
+      pop.classList.add("is-placing");
+      pop.style.setProperty("--pop-w", `${W}px`);
+      pop.style.setProperty("--pop-maxh", `${maxH}px`);
+      const H = Math.min(pop.offsetHeight, maxH);
+
+      // center of the group of four; if the grid is taller than the screen
+      // (phones, one column) center in the visible area instead
+      const cx = gr.left + gr.width / 2;
+      const cy = gr.height <= vh * 0.9 ? gr.top + gr.height / 2 : TOP_LIMIT + maxH / 2;
+      const absLeft = Math.min(Math.max(cx - W / 2, EDGE), vw - EDGE - W);
+      const absTop = Math.min(Math.max(cy - H / 2, TOP_LIMIT), vh - EDGE - H);
+      const x = absLeft - cr.left;
+      const y = absTop - cr.top;
+
+      const s = Math.min(cr.width / W, 0.96);
+      const k = 1 - s;
+      pop.style.setProperty("--pop-x", `${x.toFixed(1)}px`);
+      pop.style.setProperty("--pop-y", `${y.toFixed(1)}px`);
+      pop.style.setProperty("--pop-s", s.toFixed(4));
+      pop.style.setProperty("--pop-ox", `${(-x / k).toFixed(1)}px`);
+      pop.style.setProperty("--pop-oy", `${((cr.height / 2 - y - (s * H) / 2) / k).toFixed(1)}px`);
+
+      void pop.offsetWidth;                 // commit the closed pose before animating open
+      pop.classList.remove("is-placing");
+    }
+
+    function setControls(e, on){
+      e.controls.forEach((c) => { c.tabIndex = on ? 0 : -1; });
+    }
+
+    function openEntry(e, pin){
+      if (current && current !== e) closeEntry(current);
+      if (current !== e){
+        place(e);
+        e.card.classList.add("is-open");
+        e.face.setAttribute("aria-expanded", "true");
+        section.classList.add("has-open");
+        current = e;
+        pinned = false;
+      }
+      if (pin && !pinned){
+        pinned = true;
+        e.card.classList.add("is-pinned");
+        setControls(e, true);
+      }
+    }
+
+    function closeEntry(e, opts){
+      clearTimeout(e.timer);   // a hover-intent timer still pending would re-open it right after
+      e.card.classList.remove("is-open", "is-pinned");
+      e.face.setAttribute("aria-expanded", "false");
+      setControls(e, false);
+      if (current === e){ current = null; pinned = false; section.classList.remove("has-open"); }
+      if (opts && opts.restoreFocus){
+        ignoreFocus = true;
+        e.face.focus({ preventScroll: true });
+        ignoreFocus = false;
+      }
+    }
+
+    function pinEntry(e){
+      const alreadyPinned = current === e && pinned;
+      openEntry(e, true);
+      if (!alreadyPinned) e.closeBtn.focus({ preventScroll: true });
+    }
+
+    // decode the screenshots before the first open so nothing pops in
+    function warm(e){
+      if (e.warmed) return;
+      e.warmed = true;
+      e.pop.querySelectorAll("img").forEach((img) => { if (img.decode) img.decode().catch(() => {}); });
     }
 
     cards.forEach((card) => {
-      card.addEventListener("click", () => openStyle(card.dataset.style));
-      card.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " "){
-          e.preventDefault();
-          openStyle(card.dataset.style);
-        }
+      const face = card.querySelector(".style-card-face");
+      const built = buildPop(card, face);
+      const e = { card, face, pop: built.pop, closeBtn: built.closeBtn, controls: built.controls, timer: 0, warmed: false };
+
+      // mouse hover (hover-capable pointers only; touch has no hover state).
+      // The preview panel ignores the pointer, so moving across the tiles just
+      // swaps which panel is open.
+      card.addEventListener("pointerenter", (ev) => {
+        if (ev.pointerType !== "mouse" || !canHover()) return;
+        warm(e);
+        clearTimeout(e.timer);
+        e.timer = setTimeout(() => openEntry(e, false), HOVER_DELAY);
       });
+      card.addEventListener("pointerleave", (ev) => {
+        if (ev.pointerType !== "mouse") return;
+        clearTimeout(e.timer);
+        if (current === e && !pinned) closeEntry(e);
+      });
+
+      // click / tap pins (listen on the whole card: a pinned panel sits on top of the tile)
+      card.addEventListener("click", (ev) => {
+        if (ev.target.closest(".style-card-pop-close, .style-card-pop-ref, .style-card-pop-link")) return;
+        pinEntry(e);
+      });
+
+      // keyboard: focus previews, Enter / Space pins
+      face.addEventListener("focus", () => {
+        if (ignoreFocus || !face.matches(":focus-visible")) return;
+        warm(e);
+        openEntry(e, false);
+      });
+      face.addEventListener("keydown", (ev) => {
+        if (ev.key !== "Enter" && ev.key !== " ") return;
+        ev.preventDefault();
+        pinEntry(e);
+      });
+      card.addEventListener("focusout", (ev) => {
+        if (card.contains(ev.relatedTarget)) return;
+        if (current === e && !pinned && !card.matches(":hover")) closeEntry(e);
+      });
+
+      e.closeBtn.addEventListener("click", () => closeEntry(e, { restoreFocus: true }));
     });
 
-    if (closeBtn) closeBtn.addEventListener("click", () => modal.close());
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) modal.close();
+    document.addEventListener("keydown", (ev) => {
+      if (ev.key !== "Escape" || !current) return;
+      closeEntry(current, { restoreFocus: current.card.contains(document.activeElement) });
     });
+    document.addEventListener("pointerdown", (ev) => {
+      if (current && pinned && !current.card.contains(ev.target)) closeEntry(current);
+    });
+
+    // layout changed under an open panel: close it (width only — mobile URL-bar
+    // show/hide fires resize too and must not dismiss a pinned panel)
+    let lastWidth = window.innerWidth;
+    window.addEventListener("resize", () => {
+      if (window.innerWidth === lastWidth) return;
+      lastWidth = window.innerWidth;
+      if (current) closeEntry(current);
+    }, { passive: true });
   }
 
   /* ============ legal modals: Privacy / Legal Notice, opened from the footer ============ */
@@ -651,7 +843,7 @@
       const bodyLines = lang === "es"
         ? [`Nombre: ${name}`, `Email: ${email}`, "", message]
         : [`Name: ${name}`, `Email: ${email}`, "", message];
-      const mailto = `mailto:suligonserv@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+      const mailto = `mailto:suligonwebs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
       if (note) note.textContent = dict[lang]["contact.note.opening"];
       window.location.href = mailto;
     }

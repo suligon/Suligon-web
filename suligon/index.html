@@ -28,7 +28,7 @@
   "@type": "Organization",
   "name": "Suligon",
   "description": "Suligon designs and builds custom websites and AI agents for local businesses in the United States and Spain.",
-  "email": "suligonserv@gmail.com",
+  "email": "suligonwebs@gmail.com",
   "areaServed": ["US", "ES"],
   "knowsLanguage": ["en", "es"],
   "logo": "https://suligon.com/assets/favicon-192.png"
@@ -260,103 +260,150 @@
         <p class="section-sub" data-i18n="styles.sub">A direction is chosen for the business, not the other way around. Here are four we work in.</p>
       </div>
 
+      <!--
+        Compact squares here; the big panel (palette, explanation, reference
+        sites) is built per card by initStyleCards() in main.js and opens
+        centered over the whole grid on hover / focus / tap.
+        Reference screenshots come from the Style Gallery
+        (https://styleweb.suligonserv.workers.dev/), optimized into
+        /public/images/styles/ (AVIF + WebP + JPEG, 480w + full width).
+      -->
       <div class="card-grid card-grid-4">
-        <article class="panel-shell style-card style-card-active reveal" tabindex="0" role="button" aria-haspopup="dialog" data-style="editorial">
-          <div class="panel-core">
-            <div class="swatch-row swatch-row-lg">
-              <span class="swatch-dot" style="--sw:#F7F6F2"></span>
-              <span class="swatch-dot" style="--sw:#15171A"></span>
-              <span class="swatch-dot" style="--sw:#E0562F"></span>
+
+        <article class="panel-shell style-card style-card-active reveal" data-style="minimalism">
+          <div class="style-card-face" role="button" tabindex="0" aria-expanded="false" aria-labelledby="style-minimalism-name">
+            <div class="panel-core">
+              <div class="swatch-row swatch-row-lg">
+                <span class="swatch-dot" style="--sw:#FFFFFF"></span>
+                <span class="swatch-dot" style="--sw:#0E0E0E"></span>
+                <span class="swatch-dot" style="--sw:#8A8A8A"></span>
+              </div>
+              <div class="style-card-images">
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/minimalismo-minimalcollective-480.avif 480w, /public/images/styles/minimalismo-minimalcollective-800.avif 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/minimalismo-minimalcollective-480.webp 480w, /public/images/styles/minimalismo-minimalcollective-800.webp 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/minimalismo-minimalcollective-800.jpg" srcset="/public/images/styles/minimalismo-minimalcollective-480.jpg 480w, /public/images/styles/minimalismo-minimalcollective-800.jpg 800w" sizes="(min-width: 1032px) 96px, 30vw" width="800" height="540" alt="Minimal Collective: black hairline ellipses over a grey page, a chrome 3D logo and the headline 'Operating at the intersection of music, art and technology'" data-i18n-alt="styles.alt.minimalism.1" loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/minimalismo-silencio-480.avif 480w, /public/images/styles/minimalismo-silencio-1000.avif 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/minimalismo-silencio-480.webp 480w, /public/images/styles/minimalismo-silencio-1000.webp 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/minimalismo-silencio-1000.jpg" srcset="/public/images/styles/minimalismo-silencio-480.jpg 480w, /public/images/styles/minimalismo-silencio-1000.jpg 1000w" sizes="(min-width: 1032px) 96px, 30vw" width="1000" height="650" alt="Silencio design studio: a pale grey page with a small centred uppercase statement and tiny two-column text, almost no ornament" data-i18n-alt="styles.alt.minimalism.2" loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/minimalismo-everlane-480.avif 480w, /public/images/styles/minimalismo-everlane-800.avif 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/minimalismo-everlane-480.webp 480w, /public/images/styles/minimalismo-everlane-800.webp 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/minimalismo-everlane-800.jpg" srcset="/public/images/styles/minimalismo-everlane-480.jpg 480w, /public/images/styles/minimalismo-everlane-800.jpg 800w" sizes="(min-width: 1032px) 96px, 30vw" width="800" height="540" alt="Everlane home page: a woman in a green sweater on a light studio set under the headline 'Power of softness' and a thin uppercase menu" data-i18n-alt="styles.alt.minimalism.3" loading="lazy" decoding="async">
+              </picture>
+              </div>
+              <h3 id="style-minimalism-name" data-i18n="styles.card1.title">Minimalism</h3>
+              <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
             </div>
-            <div class="style-card-images">
-              <img src="assets/references/editorial-kinfolk.jpg" alt="Kinfolk — kinfolk.com" loading="lazy">
-              <img src="assets/references/editorial-redantler.jpg" alt="Red Antler — redantler.com" loading="lazy">
-              <img src="assets/references/editorial-monocle.jpg" alt="Monocle — monocle.com" loading="lazy">
-            </div>
-            <h3 data-i18n="styles.card1.title">Editorial warmth</h3>
-            <p data-i18n="styles.card1.text">Warm cream, ink and one confident accent. For brands that want to feel considered — this page, for example.</p>
-            <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
           </div>
         </article>
 
-        <article class="panel-shell style-card reveal" style="--d:80ms" tabindex="0" role="button" aria-haspopup="dialog" data-style="brutal">
-          <div class="panel-core">
-            <div class="swatch-row swatch-row-lg">
-              <span class="swatch-dot" style="--sw:#0B0B08"></span>
-              <span class="swatch-dot" style="--sw:#8C1C1C"></span>
-              <span class="swatch-dot" style="--sw:#D4CEB8"></span>
+        <article class="panel-shell style-card reveal" style="--d:80ms" data-style="brutalism">
+          <div class="style-card-face" role="button" tabindex="0" aria-expanded="false" aria-labelledby="style-brutalism-name">
+            <div class="panel-core">
+              <div class="swatch-row swatch-row-lg">
+                <span class="swatch-dot" style="--sw:#0B0B08"></span>
+                <span class="swatch-dot" style="--sw:#8C1C1C"></span>
+                <span class="swatch-dot" style="--sw:#D4CEB8"></span>
+              </div>
+              <div class="style-card-images">
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/brutalism-wemakethings-480.avif 480w, /public/images/styles/brutalism-wemakethings-1000.avif 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/brutalism-wemakethings-480.webp 480w, /public/images/styles/brutalism-wemakethings-1000.webp 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/brutalism-wemakethings-1000.jpg" srcset="/public/images/styles/brutalism-wemakethings-480.jpg 480w, /public/images/styles/brutalism-wemakethings-1000.jpg 1000w" sizes="(min-width: 1032px) 96px, 30vw" width="1000" height="650" alt="We Make Things GmbH: giant outlined letters behind uppercase black text about a bicycle accessories company in Cologne" data-i18n-alt="styles.alt.brutalism.1" loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/brutalism-charlie-480.avif 480w, /public/images/styles/brutalism-charlie-800.avif 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/brutalism-charlie-480.webp 480w, /public/images/styles/brutalism-charlie-800.webp 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/brutalism-charlie-800.jpg" srcset="/public/images/styles/brutalism-charlie-480.jpg 480w, /public/images/styles/brutalism-charlie-800.jpg 800w" sizes="(min-width: 1032px) 96px, 30vw" width="800" height="546" alt="Charlie type foundry: huge white custom lettering on a pure black page with three small pill-shaped menu links" data-i18n-alt="styles.alt.brutalism.2" loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/brutalism-eindhoven-480.avif 480w, /public/images/styles/brutalism-eindhoven-800.avif 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/brutalism-eindhoven-480.webp 480w, /public/images/styles/brutalism-eindhoven-800.webp 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/brutalism-eindhoven-800.jpg" srcset="/public/images/styles/brutalism-eindhoven-480.jpg 480w, /public/images/styles/brutalism-eindhoven-800.jpg 800w" sizes="(min-width: 1032px) 96px, 30vw" width="800" height="540" alt="Eindhoven Design District: oversized black sans-serif headings and architecture photos on a white page" data-i18n-alt="styles.alt.brutalism.3" loading="lazy" decoding="async">
+              </picture>
+              </div>
+              <h3 id="style-brutalism-name" data-i18n="styles.card2.title">Brutalism</h3>
+              <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
             </div>
-            <div class="style-card-images">
-              <img src="assets/references/brutal-mschf.jpg" alt="MSCHF — mschf.com" loading="lazy">
-              <img src="assets/references/brutal-gumroad.jpg" alt="Gumroad — gumroad.com" loading="lazy">
-              <img src="assets/references/brutal-supahero.jpg" alt="Supahero — supahero.io" loading="lazy">
-            </div>
-            <h3 data-i18n="styles.card2.title">Industrial brutalist</h3>
-            <p data-i18n="styles.card2.text">Near-black, one accent, exposed structure. For brands that trade on precision and grit.</p>
-            <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
           </div>
         </article>
 
-        <article class="panel-shell style-card reveal" style="--d:160ms" tabindex="0" role="button" aria-haspopup="dialog" data-style="collage">
-          <div class="panel-core">
-            <div class="swatch-row swatch-row-lg">
-              <span class="swatch-dot" style="--sw:#231935"></span>
-              <span class="swatch-dot" style="--sw:#ff6a3d"></span>
-              <span class="swatch-dot" style="--sw:#ffd23f"></span>
+        <article class="panel-shell style-card reveal" style="--d:160ms" data-style="maximalism">
+          <div class="style-card-face" role="button" tabindex="0" aria-expanded="false" aria-labelledby="style-maximalism-name">
+            <div class="panel-core">
+              <div class="swatch-row swatch-row-lg">
+                <span class="swatch-dot" style="--sw:#231935"></span>
+                <span class="swatch-dot" style="--sw:#ff6a3d"></span>
+                <span class="swatch-dot" style="--sw:#ffd23f"></span>
+              </div>
+              <div class="style-card-images">
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/maximalismo-sickagency-480.avif 480w, /public/images/styles/maximalismo-sickagency-1000.avif 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/maximalismo-sickagency-480.webp 480w, /public/images/styles/maximalismo-sickagency-1000.webp 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/maximalismo-sickagency-1000.jpg" srcset="/public/images/styles/maximalismo-sickagency-480.jpg 480w, /public/images/styles/maximalismo-sickagency-1000.jpg 1000w" sizes="(min-width: 1032px) 96px, 30vw" width="1000" height="650" alt="SICK Agency: a green page with huge yellow condensed type, a blue circular stamp and repeated text bands" data-i18n-alt="styles.alt.maximalism.1" loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/maximalismo-rawmaterials-480.avif 480w, /public/images/styles/maximalismo-rawmaterials-1000.avif 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/maximalismo-rawmaterials-480.webp 480w, /public/images/styles/maximalismo-rawmaterials-1000.webp 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/maximalismo-rawmaterials-1000.jpg" srcset="/public/images/styles/maximalismo-rawmaterials-480.jpg 480w, /public/images/styles/maximalismo-rawmaterials-1000.jpg 1000w" sizes="(min-width: 1032px) 96px, 30vw" width="1000" height="650" alt="Raw Materials: giant black 'RM' lettering beside a column of saturated colour blocks in orange, purple, blue and pink" data-i18n-alt="styles.alt.maximalism.2" loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/maximalismo-wisedesign-480.avif 480w, /public/images/styles/maximalismo-wisedesign-1000.avif 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/maximalismo-wisedesign-480.webp 480w, /public/images/styles/maximalismo-wisedesign-1000.webp 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/maximalismo-wisedesign-1000.jpg" srcset="/public/images/styles/maximalismo-wisedesign-480.jpg 480w, /public/images/styles/maximalismo-wisedesign-1000.jpg 1000w" sizes="(min-width: 1032px) 96px, 30vw" width="1000" height="650" alt="Wise: a bright lime-green page with a heavy dark headline about sending money abroad and a currency converter card" data-i18n-alt="styles.alt.maximalism.3" loading="lazy" decoding="async">
+              </picture>
+              </div>
+              <h3 id="style-maximalism-name" data-i18n="styles.card3.title">Maximalism</h3>
+              <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
             </div>
-            <div class="style-card-images">
-              <img src="assets/references/memphis-mailchimp.jpg" alt="Mailchimp — mailchimp.com" loading="lazy">
-              <img src="assets/references/memphis-slack.jpg" alt="Slack — slack.com" loading="lazy">
-              <img src="assets/references/memphis-airbnb.jpg" alt="Airbnb — airbnb.com" loading="lazy">
-            </div>
-            <h3 data-i18n="styles.card3.title">Vibrant collage</h3>
-            <p data-i18n="styles.card3.text">Layered color, tilted type, controlled overlap. For brands that want energy on the page.</p>
-            <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
           </div>
         </article>
 
-        <article class="panel-shell style-card reveal" style="--d:240ms" tabindex="0" role="button" aria-haspopup="dialog" data-style="glass">
-          <div class="panel-core">
-            <div class="swatch-row swatch-row-lg">
-              <span class="swatch-dot" style="--sw:#05060A"></span>
-              <span class="swatch-dot" style="--sw:#3B82F6"></span>
-              <span class="swatch-dot" style="--sw:#4CC9F0"></span>
+        <article class="panel-shell style-card reveal" style="--d:240ms" data-style="glassmorphism">
+          <div class="style-card-face" role="button" tabindex="0" aria-expanded="false" aria-labelledby="style-glass-name">
+            <div class="panel-core">
+              <div class="swatch-row swatch-row-lg">
+                <span class="swatch-dot" style="--sw:#05060A"></span>
+                <span class="swatch-dot" style="--sw:#3B82F6"></span>
+                <span class="swatch-dot" style="--sw:#4CC9F0"></span>
+              </div>
+              <div class="style-card-images">
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/glassmorphism-dimension-480.avif 480w, /public/images/styles/glassmorphism-dimension-1000.avif 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/glassmorphism-dimension-480.webp 480w, /public/images/styles/glassmorphism-dimension-1000.webp 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/glassmorphism-dimension-1000.jpg" srcset="/public/images/styles/glassmorphism-dimension-480.jpg 480w, /public/images/styles/glassmorphism-dimension-1000.jpg 1000w" sizes="(min-width: 1032px) 96px, 30vw" width="1000" height="650" alt="Dimension: 'The AI coworker that never sleeps' over a blurred blue-grey gradient with floating app icons in frosted glass" data-i18n-alt="styles.alt.glass.1" loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/glassmorphism-authkit-480.avif 480w, /public/images/styles/glassmorphism-authkit-1000.avif 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/glassmorphism-authkit-480.webp 480w, /public/images/styles/glassmorphism-authkit-1000.webp 1000w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/glassmorphism-authkit-1000.jpg" srcset="/public/images/styles/glassmorphism-authkit-480.jpg 480w, /public/images/styles/glassmorphism-authkit-1000.jpg 1000w" sizes="(min-width: 1032px) 96px, 30vw" width="1000" height="650" alt="AuthKit by WorkOS: a glowing 'AuthKit' title on a near-black grid background with translucent login cards" data-i18n-alt="styles.alt.glass.2" loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source type="image/avif" srcset="/public/images/styles/glassmorphism-air-480.avif 480w, /public/images/styles/glassmorphism-air-800.avif 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <source type="image/webp" srcset="/public/images/styles/glassmorphism-air-480.webp 480w, /public/images/styles/glassmorphism-air-800.webp 800w" sizes="(min-width: 1032px) 96px, 30vw">
+                <img src="/public/images/styles/glassmorphism-air-800.jpg" srcset="/public/images/styles/glassmorphism-air-480.jpg 480w, /public/images/styles/glassmorphism-air-800.jpg 800w" sizes="(min-width: 1032px) 96px, 30vw" width="800" height="540" alt="Air: 'Your agent for creative tasks' on a purple-to-peach blurred gradient with three glass-like image cards" data-i18n-alt="styles.alt.glass.3" loading="lazy" decoding="async">
+              </picture>
+              </div>
+              <h3 id="style-glass-name" data-i18n="styles.card4.title">Glassmorphism</h3>
+              <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
             </div>
-            <div class="style-card-images">
-              <img src="assets/references/glass-apple.jpg" alt="Apple — apple.com" loading="lazy">
-              <img src="assets/references/glass-robinhood.jpg" alt="Robinhood — robinhood.com" loading="lazy">
-              <img src="assets/references/glass-abstract.jpg" alt="Glass composition — visual reference" loading="lazy">
-            </div>
-            <h3 data-i18n="styles.card4.title">Minimal glass</h3>
-            <p data-i18n="styles.card4.text">Dark, technical, precise glass panels. For software and product-led brands.</p>
-            <span class="style-card-hint" data-i18n="styles.hint">Explore this style</span>
           </div>
         </article>
+      </div>
+
+      <div class="styles-cta reveal">
+        <p class="styles-cta-text" data-i18n="styles.cta.text">Want to explore all our styles?</p>
+        <a class="styles-cta-btn" href="https://styleweb.suligonserv.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open the Style Gallery (opens in a new tab)" data-i18n-aria="styles.cta.aria">
+          <span data-i18n="styles.cta.button">Style Gallery</span>
+          <svg class="styles-cta-arrow" viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </section>
-
-  <!-- ============ STYLE MODAL ============ -->
-  <dialog id="style-modal" class="style-modal">
-    <button type="button" class="style-modal-close" id="style-modal-close" aria-label="Close">
-      <svg viewBox="0 0 20 20" width="16" height="16"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
-    </button>
-    <div class="style-modal-body">
-      <div class="style-modal-columns">
-        <div class="style-modal-col">
-          <div class="swatch-row swatch-row-lg" id="style-modal-swatches"></div>
-          <h3 class="style-modal-title" id="style-modal-title"></h3>
-          <p class="style-modal-tagline" id="style-modal-tagline"></p>
-          <dl class="style-modal-tokens" id="style-modal-tokens"></dl>
-        </div>
-        <div class="style-modal-col">
-          <div class="style-modal-poster" id="style-modal-poster"></div>
-          <span class="eyebrow eyebrow-sm" data-i18n="styles.modal.refs">Real references</span>
-          <div class="style-modal-examples" id="style-modal-examples"></div>
-        </div>
-      </div>
-    </div>
-  </dialog>
 
   <!-- ============ LEGAL MODALS ============ -->
   <dialog id="privacy-modal" class="legal-modal">
@@ -366,12 +413,12 @@
     <div class="legal-modal-body">
       <h3 class="legal-modal-title" data-i18n="footer.privacyHeading">Privacy</h3>
       <div class="legal-modal-text" data-i18n="privacy.body">
-        <p><strong>Data controller:</strong> Suligon (in the process of registering as a business activity in Spain). Contact: suligonserv@gmail.com.</p>
+        <p><strong>Data controller:</strong> Suligon (in the process of registering as a business activity in Spain). Contact: suligonwebs@gmail.com.</p>
         <p><strong>What we collect:</strong> via the contact form — name, email, and your message. We don't collect anything automatically — this site doesn't use tracking, analytics, or advertising cookies.</p>
         <p><strong>What we use it for:</strong> only to respond to your inquiry.</p>
         <p><strong>Who we share it with:</strong> the contact form uses Web3Forms (web3forms.com) to deliver your message to us by email. This provider processes your name, email and message solely for this purpose.</p>
         <p><strong>How long we keep it:</strong> only as long as needed to respond, and at most 12 months, unless there's an active business relationship.</p>
-        <p><strong>Your rights:</strong> you can request access, correction, or deletion of your data anytime by emailing suligonserv@gmail.com.</p>
+        <p><strong>Your rights:</strong> you can request access, correction, or deletion of your data anytime by emailing suligonwebs@gmail.com.</p>
         <p><strong>Cookies:</strong> this site does not use first-party or third-party tracking, analytics, or advertising cookies.</p>
       </div>
     </div>
@@ -386,7 +433,7 @@
       <div class="legal-modal-text" data-i18n="legal.body">
         <p>Suligon is in the process of registering as a business activity in Spain. Full legal and tax details will be published here once that process is complete.</p>
         <p><strong>Trading name:</strong> Suligon</p>
-        <p><strong>Contact email:</strong> suligonserv@gmail.com</p>
+        <p><strong>Contact email:</strong> suligonwebs@gmail.com</p>
         <!-- FALTA: NIF -->
         <!-- FALTA: domicilio fiscal -->
       </div>
@@ -441,7 +488,7 @@
     <div class="container contact-inner">
       <div class="section-head reveal">
         <h2 class="section-title" data-i18n="contact.title">Tell us about your business</h2>
-        <p class="section-sub" data-i18n="contact.sub">We reply from suligonserv@gmail.com, usually within a day or two.</p>
+        <p class="section-sub" data-i18n="contact.sub">We reply from suligonwebs@gmail.com, usually within a day or two.</p>
       </div>
 
       <div class="panel-shell contact-panel reveal">
@@ -449,10 +496,11 @@
 
           <!--
             EMAIL DELIVERY: this form posts to Web3Forms (web3forms.com) with
-            Suligon's real access key below, so a submission here sends an
-            actual email to suligonserv@gmail.com — no backend of our own.
-            If that key ever needs replacing, get a new one at
-            https://web3forms.com (enter suligonserv@gmail.com, no account
+            Suligon's access key below. The previous key was registered to the
+            old address, so it was removed: until a key for suligonwebs@gmail.com
+            is pasted into "access_key", JS falls back to mailto: suligonwebs@gmail.com.
+            To get a key go to
+            https://web3forms.com (enter suligonwebs@gmail.com, no account
             needed) and swap the "access_key" value. If the key is missing
             or the request fails, JS falls back to opening the visitor's own
             email client instead (see main.js initContactForm).
@@ -462,7 +510,7 @@
             embed and remove main.js's submit handler for #contact-form.
           -->
           <form id="contact-form" class="contact-form">
-            <input type="hidden" name="access_key" value="ecca99bb-99f6-4dd5-a419-f715021aa2d7">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
             <input type="hidden" name="subject" value="New message from suligon.com">
             <input type="text" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="field">
@@ -490,7 +538,7 @@
 
           <div class="contact-direct">
             <span class="eyebrow eyebrow-sm" data-i18n="contact.directLabel">Prefer email?</span>
-            <a href="mailto:suligonserv@gmail.com">suligonserv@gmail.com</a>
+            <a href="mailto:suligonwebs@gmail.com">suligonwebs@gmail.com</a>
           </div>
         </div>
       </div>

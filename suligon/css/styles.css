@@ -565,16 +565,16 @@ input, textarea{ font: inherit; color: inherit; }
 }
 
 /* cards that move on hover — small lift, not just a color swap */
-.feature-card .panel-core, .style-card .panel-core{
+.feature-card .panel-core{
   transition: transform 400ms var(--ease), box-shadow 400ms var(--ease);
 }
-.feature-card:hover .panel-core, .style-card:hover .panel-core{
+.feature-card:hover .panel-core{
   transform: translateY(-6px);
   box-shadow: 0 16px 32px -18px rgba(21,23,26,0.22);
 }
 @media (prefers-reduced-motion: reduce){
-  .feature-card .panel-core, .style-card .panel-core{ transition: box-shadow 400ms var(--ease); }
-  .feature-card:hover .panel-core, .style-card:hover .panel-core{ transform: none; }
+  .feature-card .panel-core{ transition: box-shadow 400ms var(--ease); }
+  .feature-card:hover .panel-core{ transform: none; }
 }
 
 /* three-tone treatment on "what we do" — echoes the lime/ink/light rhythm
@@ -591,8 +591,15 @@ input, textarea{ font: inherit; color: inherit; }
 
 .style-card-active{ outline: 1px solid var(--accent); outline-offset: 2px; border-radius: var(--radius-lg); }
 
-/* style cards are clickable: swap the swatch dots for real reference shots */
-.style-card{ cursor: pointer; }
+/* style cards: the compact face stays in the grid; hover / focus / tap
+   expands a pop layer on top of it (see initStyleCards in main.js) */
+.style-card{ position: relative; }
+.style-card.is-open{ z-index: 40; }
+/* every .section is its own stacking context: lift this one above the next
+   sections while a panel is open, or the panel gets painted over/clipped */
+.section.has-open{ z-index: 10; }
+.style-card-face{ cursor: pointer; border-radius: var(--radius-lg); }
+.style-card-face:focus-visible{ outline: 2px solid var(--accent); outline-offset: 4px; }
 .style-card h3{ position: relative; display: inline-block; }
 .style-card h3::after{
   content: "";
@@ -614,6 +621,7 @@ input, textarea{ font: inherit; color: inherit; }
 }
 .style-card-images img{
   width: 100%;
+  height: auto;               /* the width/height attributes only reserve space; aspect-ratio sets the real box */
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
@@ -630,48 +638,140 @@ input, textarea{ font: inherit; color: inherit; }
 }
 .style-card:hover .style-card-hint, .style-card:focus-visible .style-card-hint{ color: var(--accent-text); }
 
-/* ==========================================================================
-   Style modal — click a style card to open it large, IntegratedBio-style
-   lightbox: full token sheet, a live type/color mockup, real references.
-   ========================================================================== */
-.style-modal{
-  position: fixed;
-  inset: 0;
-  margin: auto;
-  width: min(920px, 94vw);
-  max-height: 90vh;
-  padding: 0;
-  border: 0;
-  border-radius: 1.5rem;
-  background: var(--surface);
-  color: var(--ink);
-  box-shadow: 0 40px 80px -24px rgba(21,23,26,0.35);
-}
-.style-modal::backdrop{
-  background: rgba(21,23,26,0.5);
-  backdrop-filter: blur(4px);
-}
-.style-modal-body{
-  max-height: 90vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 40px;
-}
-/* Two columns on wide screens — keeps everything short enough to fit
-   without an inner scrollbar on most laptop-height viewports. */
-.style-modal-columns{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
-  align-items: start;
-}
-/* Positioned on the dialog itself (not inside the scrolling body) so it
-   can never drift relative to the scrollbar — that was the earlier bug. */
-.style-modal-close{
+/* compact tile: swatches, three reference thumbnails, name — nothing else, so
+   the four stay small squares; the big panel carries the detail */
+.style-card .panel-core{ padding: 22px; }
+.style-card-images{ margin-bottom: 14px; }
+.style-card h3{ margin-bottom: 0; }
+
+/* big panel: centered over the whole grid (positioned from JS), animates with
+   transform + opacity only. Preview (hover / focus) ignores the pointer so the
+   tiles underneath stay reachable; pinned (click / tap / Enter) is interactive. */
+.style-card-pop{
+  --pop-ease: cubic-bezier(0.22, 1, 0.36, 1);
   position: absolute;
-  top: 18px;
-  right: 18px;
-  z-index: 3;
+  z-index: 2;
+  left: var(--pop-x, 0px);
+  top: var(--pop-y, 0px);
+  width: var(--pop-w, 100%);
+  max-height: var(--pop-maxh, none);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 28px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  /* floating layer: its edge comes from the shadow alone (no border + wide-blur combo) */
+  box-shadow: 0 40px 80px -30px rgba(21,23,26,0.45), 0 2px 6px rgba(21,23,26,0.08);
+  transform-origin: var(--pop-ox, 50%) var(--pop-oy, 50%);
+  transform: scale(var(--pop-s, 0.5));
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 380ms var(--pop-ease), opacity 220ms ease-out, visibility 0s linear 380ms;
+}
+.style-card.is-open .style-card-pop{
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  transition: transform 380ms var(--pop-ease), opacity 260ms ease-out, visibility 0s;
+}
+.style-card.is-pinned .style-card-pop{ pointer-events: auto; }
+.style-card-pop.is-placing{ transition: none !important; }
+
+.style-card-pop-label{
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.style-card-pop-top{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 32px;
+  margin-bottom: 22px;
+}
+.style-card-pop-palette{
+  display: flex;
+  gap: 16px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.style-card-pop-palette li{ display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.style-card-pop-dot{
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--sw);
+  border: 1px solid rgba(21,23,26,0.14);
+}
+.style-card-pop-palette code{ font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); }
+.style-card-pop h3{ display: block; margin: 18px 0 6px; font-size: 1.6rem; }
+.style-card-pop h3::after{ display: none; }
+.style-card-pop-intro{ display: flex; flex-direction: column; align-items: flex-start; }
+.style-card-pop-intro p{ margin: 0; font-size: 1rem; line-height: 1.5; color: var(--ink-soft); }
+.style-card-pop-intro .style-card-pop-link{ margin-top: auto; padding-top: 12px; }
+.style-card-pop-tokens{ display: grid; gap: 10px; align-content: start; margin: 0; padding-right: 28px; }
+.style-card-pop-tokens dt{
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+.style-card-pop-tokens dd{ margin: 0; font-size: 0.86rem; line-height: 1.4; color: var(--ink-soft); }
+
+.style-card-pop-refs{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 10px 0 14px;
+  padding: 0;
+  list-style: none;
+}
+.style-card-pop-ref{ display: block; color: var(--ink); }
+.style-card-pop-ref:focus-visible{ outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 12px; }
+.style-card-pop-shot{
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--bg-alt);
+  outline: 1px solid rgba(21,23,26,0.08);
+  outline-offset: -1px;
+}
+.style-card-pop-shot picture{ display: block; }
+.style-card-pop-shot img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 500ms var(--ease);
+}
+.style-card-pop-ref:hover img{ transform: scale(1.04); }
+.style-card-pop-refname{ display: block; margin-top: 8px; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.04em; }
+
+.style-card-pop-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.style-card-pop-link:hover{ color: var(--accent-text); }
+.style-card-pop-link:focus-visible{ outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+.style-card-pop-arrow{ transition: transform 250ms var(--ease); }
+.style-card-pop-link:hover .style-card-pop-arrow{ transform: translateX(4px); }
+.style-card-pop-close{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -681,74 +781,91 @@ input, textarea{ font: inherit; color: inherit; }
   color: var(--ink);
   transition: background 250ms var(--ease), transform 250ms var(--ease);
 }
-.style-modal-close:hover{ background: var(--line); transform: rotate(90deg); }
+.style-card-pop-close:hover{ background: var(--line); transform: rotate(90deg); }
+.style-card-pop-close:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.style-modal-title{
+@media (max-width: 699px){
+  .style-card-pop{ padding: 22px; }
+  .style-card-pop-top{ grid-template-columns: 1fr; gap: 20px; }
+  .style-card-pop-intro{ padding-right: 44px; }
+  .style-card-pop-tokens{ padding-right: 0; }
+  .style-card-pop-refs{ grid-template-columns: 1fr 1fr; }
+  .style-card-pop-refs li:first-child{ grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce){
+  .style-card-pop, .style-card.is-open .style-card-pop{ transition: none; }
+  .style-card-pop-arrow, .style-card-pop-close, .style-card-pop-shot img{ transition: none; }
+  .style-card-pop-link:hover .style-card-pop-arrow, .style-card-pop-close:hover, .style-card-pop-ref:hover img{ transform: none; }
+}
+
+/* "explore every style" box under the cards */
+.styles-cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 640px;
+  margin: 56px auto 0;
+  padding: 36px 28px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 2px rgba(21,23,26,0.04);
+}
+.styles-cta-text{
+  margin: 0;
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.02em;
-  font-size: 1.7rem;
-  margin: 4px 0 8px;
+  letter-spacing: -0.01em;
+  font-size: clamp(1.25rem, 2.6vw, 1.6rem);
+  color: var(--ink);
 }
-.style-modal-tagline{ color: var(--muted); font-size: 1rem; margin: 0 0 28px; max-width: 52ch; }
-
-.style-modal-poster{
-  border-radius: 1.1rem;
-  padding: 40px 32px;
-  margin-bottom: 28px;
-  overflow: hidden;
-}
-
-.style-modal-tokens{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin: 0;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-}
-.style-modal-tokens dt{
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--faint);
-  margin-bottom: 6px;
-}
-.style-modal-tokens dd{ margin: 0; font-size: 0.92rem; color: var(--ink-soft); line-height: 1.45; }
-
-.style-modal-examples{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.styles-cta-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   gap: 12px;
+  min-height: 56px;
+  padding: 14px 30px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--ink);               /* ink on #E0562F = 4.75:1, passes AA at any size */
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 24px -14px rgba(224,86,47,0.7);
+  transition: transform 300ms var(--ease), box-shadow 300ms var(--ease);
 }
-.style-modal-examples a{
-  position: relative;
-  display: block;
-  border-radius: 10px;
-  overflow: hidden;
-  background: var(--bg-alt);
+.styles-cta-btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px -14px rgba(224,86,47,0.75);
 }
-.style-modal-examples img{
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  transition: transform 500ms var(--ease);
+.styles-cta-arrow{ transition: transform 300ms var(--ease); }
+.styles-cta-btn:hover .styles-cta-arrow, .styles-cta-btn:focus-visible .styles-cta-arrow{ transform: translateX(5px); }
+.styles-cta-btn:focus-visible{ outline: 3px solid var(--ink); outline-offset: 4px; }
+@media (max-width: 480px){
+  .styles-cta{ margin-top: 40px; padding: 28px 20px; }
+  .styles-cta-btn{ width: 100%; max-width: 340px; }
 }
-.style-modal-examples a:hover img{ transform: scale(1.06); }
-.style-modal-examples span{
+@media (prefers-reduced-motion: reduce){
+  .styles-cta-btn, .styles-cta-arrow{ transition: none; }
+  .styles-cta-btn:hover, .styles-cta-btn:hover .styles-cta-arrow, .styles-cta-btn:focus-visible .styles-cta-arrow{ transform: none; }
+}
+
+.sr-only{
   position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: 8px 10px;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: #fff;
-  background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ==========================================================================
    Legal modals — Privacy / Legal Notice, opened from the footer. Same
-   dialog pattern as .style-modal, just a single scrolling text column.
+   dialog pattern as the site's other overlays, just a single scrolling text column.
    ========================================================================== */
 .legal-modal{
   position: fixed;
@@ -820,35 +937,6 @@ input, textarea{ font: inherit; color: inherit; }
   text-align: left;
 }
 .footer-heading.footer-link:hover{ color: var(--ink); text-decoration: underline; }
-
-/* ---------- per-style poster mockups: real fonts/colors, not swatches ---------- */
-.p-editorial{ background: #F7F6F2; }
-.p-editorial .pm-h{ font-family: var(--font-display); font-weight: 600; letter-spacing: -0.02em; font-size: 2rem; color: #15171A; margin-bottom: 18px; }
-.p-editorial .pm-cta{ display: inline-block; padding: 10px 20px; border-radius: 999px; background: #15171A; color: #fff; font-size: 0.85rem; font-weight: 600; }
-.p-editorial .pm-dot{ display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #E0562F; margin-left: 4px; }
-
-.p-brutal{ background: #0B0B08; }
-.p-brutal .pm-h{ font-family: -apple-system, sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; font-size: 2.2rem; line-height: 1; color: #D4CEB8; margin-bottom: 20px; }
-.p-brutal .pm-cta{ display: inline-block; padding: 10px 20px; background: #8C1C1C; color: #D4CEB8; font-family: "Courier New", monospace; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; }
-
-.p-collage{ background: #231935; }
-.p-collage .pm-h{ font-family: "Bebas Neue", sans-serif; font-size: 3rem; line-height: 0.95; color: #ffd23f; transform: rotate(-2deg); display: inline-block; margin-bottom: 20px; }
-.p-collage .pm-cta{ display: inline-block; padding: 10px 22px; border-radius: 999px; background: #ff6a3d; color: #231935; font-weight: 700; font-size: 0.85rem; }
-
-.p-glass{ background: #05060A; }
-.p-glass .pm-h{ font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; font-size: 2rem; color: #F5F7FA; margin-bottom: 18px; }
-.p-glass .pm-cta{ display: inline-block; padding: 10px 20px; border-radius: 999px; background: linear-gradient(135deg, #4CC9F0, #3B82F6); color: #04121C; font-weight: 700; font-size: 0.85rem; }
-
-@media (max-width: 760px){
-  .style-modal-columns{ grid-template-columns: 1fr; gap: 0; }
-  .style-modal-col:first-child .style-modal-tokens{ margin-bottom: 28px; }
-}
-
-@media (max-width: 640px){
-  .style-modal{ width: 94vw; max-height: 90vh; }
-  .style-modal-body{ padding: 28px 22px; }
-  .style-modal-examples{ grid-template-columns: 1fr 1fr; }
-}
 
 /* ---------- who we help: one panel, three rows (not another card grid) ---------- */
 .help-core{ padding: 8px 28px; }
