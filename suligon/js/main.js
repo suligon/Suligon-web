@@ -838,6 +838,18 @@
     });
     form.message.addEventListener("input", () => form.message.setCustomValidity(""));
 
+    // Fire-and-forget: also notify the n8n lead-intake automation so the
+    // team gets an instant push notification + the lead is logged, on top
+    // of whichever path (Web3Forms or mailto) actually delivers the message.
+    // Never blocks the form and never surfaces an error to the visitor.
+    function notifyAutomation(name, email, message){
+      fetch("https://suligon.app.n8n.cloud/webhook/suligon-lead-intake", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      }).catch(() => {});
+    }
+
     function openMailto(name, email, message, lang){
       const subject = lang === "es" ? `Nuevo proyecto — ${name}` : `New project — ${name}`;
       const bodyLines = lang === "es"
@@ -881,6 +893,8 @@
         form.reset();
         return;
       }
+
+      notifyAutomation(name, email, message);
 
       const accessKey = form.access_key ? form.access_key.value.trim() : "";
       const keyIsConfigured = accessKey && accessKey !== "YOUR_WEB3FORMS_ACCESS_KEY";
